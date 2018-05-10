@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="548px" height="888px" viewBox="0 0 548 888" enable-background="new 0 0 548 888" xml:space="preserve">
+<g id="UFO_01">
+	<g>
+		
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="574.5195" y1="397.2266" x2="574.5195" y2="-397.4283" gradientTransform="matrix(1 0 0 -1 -296 503)">
+			<stop  offset="0" style="stop-color:#F1F2F2"/>
+			<stop  offset="0.0837" style="stop-color:#A7A9AC"/>
+			<stop  offset="1" style="stop-color:#231F20"/>
+		</linearGradient>
+		<polygon opacity="0.8" fill="url(#SVGID_1_)" enable-background="new    " points="246.256,104.425 99.302,831.685 
+			457.739,831.685 306.551,104.425 		"/>
+		<ellipse fill="#F1F1F2" cx="275.3" cy="834.215" rx="179.219" ry="12.447"/>
+		<ellipse fill="#999999" cx="295.657" cy="834.215" rx="58.937" ry="5.215"/>
+		<g opacity="0.3">
+			
+				<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="607.46" y1="337.4414" x2="607.4599" y2="-913.7596" gradientTransform="matrix(1 0 0 -1 -296 503)">
+				<stop  offset="0" style="stop-color:#FFFFFF"/>
+				<stop  offset="1" style="stop-color:#231F20"/>
+			</linearGradient>
+			<polygon fill="url(#SVGID_2_)" points="267.775,108.451 355.146,606.491 295.587,110.802 			"/>
+			
+				<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="539.0713" y1="337.4414" x2="539.0711" y2="-913.7592" gradientTransform="matrix(1 0 0 -1 -296 503)">
+				<stop  offset="0" style="stop-color:#FFFFFF"/>
+				<stop  offset="1" style="stop-color:#231F20"/>
+			</linearGradient>
+			<polygon fill="url(#SVGID_3_)" points="204.36,609.695 250.521,108.451 281.784,110.802 			"/>
+			
+				<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="570.8135" y1="337.4414" x2="570.8133" y2="-913.7615" gradientTransform="matrix(1 0 0 -1 -296 503)">
+				<stop  offset="0" style="stop-color:#FFFFFF"/>
+				<stop  offset="1" style="stop-color:#231F20"/>
+			</linearGradient>
+			<polygon fill="url(#SVGID_4_)" points="253.972,108.451 279.58,648.23 295.657,108.451 			"/>
+		</g>
+	</g>
+	<g>
+		
+			<linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="568.8369" y1="543.2031" x2="568.8369" y2="421.9398" gradientTransform="matrix(1 0 0 -1 -296 503)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="0.9951" style="stop-color:#231F20"/>
+		</linearGradient>
+		<path fill="url(#SVGID_5_)" d="M226.611,100.752V69.934c0,0,0-46.227,46.226-46.227c46.228,0,46.228,46.227,46.228,46.227v30.818
+			H226.611z"/>
+		<polygon fill="#6D6E70" points="272.837,85.344 211.201,85.344 118.747,100.752 272.837,100.752 		"/>
+		<polygon fill="#6D6E70" points="272.837,85.344 334.473,85.344 426.928,100.752 272.837,100.752 		"/>
+		<polygon fill="#58595B" points="211.201,85.344 226.611,69.934 319.063,69.934 334.473,85.344 		"/>
+		<polygon fill="#E6E7E8" points="118.747,100.752 192.442,110.802 353.232,110.802 426.928,100.752 		"/>
+		<ellipse fill="#FFFFFF" cx="272.837" cy="108.451" rx="30.147" ry="3.35"/>
+		<g>
+			<circle fill="#6D6E70" cx="238.778" cy="77.639" r="2.847"/>
+			<path fill="#6D6E70" d="M256.807,75.741c0,0.523-0.425,0.948-0.949,0.948h-11.386c-0.524,0-0.949-0.425-0.949-0.948l0,0
+				c0-0.523,0.425-0.949,0.949-0.949h11.386C256.382,74.792,256.807,75.218,256.807,75.741L256.807,75.741z"/>
+			<path fill="#6D6E70" d="M251.113,79.537c0,0.523-0.424,0.948-0.949,0.948h-5.692c-0.524,0-0.949-0.425-0.949-0.948l0,0
+				c0-0.523,0.425-0.949,0.949-0.949h5.692C250.689,78.588,251.113,79.014,251.113,79.537L251.113,79.537z"/>
+			<path fill="#6D6E70" d="M234.033,79.537c0,0.523-0.424,0.948-0.948,0.948l0,0c-0.524,0-0.948-0.425-0.948-0.948v-3.796
+				c0-0.523,0.424-0.949,0.948-0.949l0,0c0.524,0,0.948,0.426,0.948,0.949V79.537z"/>
+			<circle fill="#E6E7E8" cx="270.091" cy="76.689" r="1.897"/>
+			<circle fill="#6D6E70" cx="277.682" cy="76.689" r="1.898"/>
+			<circle fill="#6D6E70" cx="285.273" cy="76.689" r="1.897"/>
+		</g>
+		<g>
+			<path fill="#58595B" d="M285.963,94.166c0,1.018-0.824,1.842-1.84,1.842h-4.602c-1.017,0-1.84-0.824-1.84-1.842v-4.6
+				c0-1.016,0.823-1.84,1.84-1.84h4.602c1.016,0,1.84,0.824,1.84,1.84V94.166z"/>
+			<path fill="#58595B" d="M291.484,88.416c0,0.381-0.311,0.69-0.691,0.69h-2.759c-0.382,0-0.69-0.31-0.69-0.69l0,0
+				c0-0.381,0.309-0.689,0.69-0.689h2.759C291.175,87.727,291.484,88.035,291.484,88.416L291.484,88.416z"/>
+			<path fill="#58595B" d="M291.484,91.177c0,0.38-0.311,0.69-0.691,0.69h-2.759c-0.382,0-0.69-0.311-0.69-0.69l0,0
+				c0-0.382,0.309-0.69,0.69-0.69h2.759C291.175,90.486,291.484,90.795,291.484,91.177L291.484,91.177z"/>
+			<path fill="#58595B" d="M291.484,93.938c0,0.38-0.311,0.689-0.691,0.689h-2.759c-0.382,0-0.69-0.31-0.69-0.689l0,0
+				c0-0.381,0.309-0.691,0.69-0.691h2.759C291.175,93.246,291.484,93.557,291.484,93.938L291.484,93.938z"/>
+			<path fill="#58595B" d="M291.484,96.697c0,0.381-0.311,0.689-0.691,0.689h-2.759c-0.382,0-0.69-0.309-0.69-0.689l0,0
+				c0-0.381,0.309-0.689,0.69-0.689h2.759C291.175,96.008,291.484,96.316,291.484,96.697L291.484,96.697z"/>
+			<circle fill="#58595B" cx="312.877" cy="89.797" r="2.07"/>
+			<circle fill="#58595B" cx="308.735" cy="88.416" r="0.69"/>
+		</g>
+		<rect x="226.611" y="68.307" fill="#6D6E70" width="92.452" height="1.627"/>
+		<rect x="255.541" y="66.881" fill="#6D6E70" width="34.592" height="2.967"/>
+		<g>
+			<path fill="#6D6E70" d="M265.85,59.894c0,0-2.328,0-2.328-2.329v-4.658c0,0,0-2.329,2.328-2.329h13.975c0,0,2.329,0,2.329,2.329
+				v4.658c0,0,0,2.329-2.329,2.329H265.85z"/>
+			<path fill="#58595B" d="M268.179,66.881v-2.33c0,0,0-2.328,2.329-2.328h4.658c0,0,2.33,0,2.33,2.328v2.33H268.179z"/>
+			<rect x="270.508" y="59.894" fill="#58595B" width="4.658" height="2.329"/>
+			<ellipse fill="#E6E7E8" cx="267.014" cy="55.235" rx="1.165" ry="2.329"/>
+			<ellipse fill="#E6E7E8" cx="277.495" cy="55.235" rx="1.165" ry="2.329"/>
+		</g>
+	</g>
+</g>
+</svg>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="314px" height="524px" viewBox="0 0 314 524" enable-background="new 0 0 314 524" xml:space="preserve">
+<g id="ROWER">
+	<circle fill="none" stroke="#1F1F20" stroke-width="2.5114" stroke-miterlimit="10" cx="194.043" cy="392.859" r="24.109"/>
+	<circle fill="none" stroke="#BBBDBF" stroke-width="0.8371" stroke-miterlimit="10" cx="194.042" cy="392.858" r="21.096"/>
+	<circle fill="#1F1F20" cx="194.043" cy="392.858" r="3.013"/>
+	<circle fill="none" stroke="#1F1F20" stroke-width="2.5114" stroke-miterlimit="10" cx="126.607" cy="367.632" r="24.109"/>
+	<circle fill="none" stroke="#BBBDBF" stroke-width="0.8371" stroke-miterlimit="10" cx="126.608" cy="367.631" r="21.095"/>
+	<circle fill="#1F1F20" cx="126.607" cy="367.632" r="3.014"/>
+	<polyline fill="none" stroke="#58595B" stroke-width="2.0091" stroke-miterlimit="10" points="194.715,348.063 165.116,388.475 
+		194.042,392.859 188.723,355.475 149.735,339.275 126.301,367.518 	"/>
+	<circle fill="none" stroke="#1F1F20" stroke-width="1.3394" stroke-miterlimit="10" cx="165.116" cy="388.474" r="6.026"/>
+	
+		<line fill="none" stroke="#58595B" stroke-width="2.0091" stroke-miterlimit="10" x1="165.116" y1="388.475" x2="147.267" y2="341.573"/>
+	<polyline fill="none" stroke="#58595B" stroke-width="2.0091" stroke-miterlimit="10" points="149.735,339.275 158.191,329.57 
+		151.136,326.934 	"/>
+	
+		<line fill="none" stroke="#1F1F20" stroke-width="1.3394" stroke-miterlimit="10" x1="165.634" y1="374.188" x2="164.07" y2="404.171"/>
+	
+		<rect x="161.734" y="372.533" transform="matrix(0.9365 0.3505 -0.3505 0.9365 141.4562 -34.0676)" fill="#A7A9AC" width="6.196" height="2.346"/>
+	
+		<rect x="159.598" y="402.901" transform="matrix(0.9366 0.3504 -0.3504 0.9366 151.8658 -31.635)" fill="#404041" width="7.534" height="2.01"/>
+	<path fill="#BCBEC0" d="M207.421,348.5c0,0-3.433,6.938-8.712,3.533c-5.279-3.405-3.754-5.576-11.488-8.471
+		C187.221,343.563,186.34,338.587,207.421,348.5z"/>
+	
+		<rect x="153.291" y="325.787" transform="matrix(0.9367 0.35 -0.35 0.9367 124.6077 -33.3118)" fill="#1F1F20" width="2.344" height="4.583"/>
+	
+		<rect x="146.766" y="335.639" transform="matrix(0.9367 0.3503 -0.3503 0.9367 128.0452 -30.3535)" fill="#1F1F20" width="2.345" height="6.363"/>
+</g>
+</svg>
