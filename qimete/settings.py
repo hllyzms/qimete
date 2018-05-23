@@ -23,8 +23,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'u(%t3qg9e%pcxq$83b*(_ror54%u10iyse2jwtcwow&83pfo8t'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-#DEBUG = True
-DEBUG = False
+DEBUG = True
+#DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
@@ -59,8 +59,7 @@ ROOT_URLCONF = 'qimete.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
-        ,
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -136,11 +135,9 @@ USE_TZ = False
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
-
-STATIC_URL = '/static/'
-
-STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
-STATIC_ROOT = '/var/www/qimete/static'
+STATIC_URL = '/static/'  # 这个是访问的地址
+STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)  # 这个是实际存储的物理地址
+STATIC_ROOT = '/var/www/qimete/static'  # 这是静态文件将被统一收集的地址
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
