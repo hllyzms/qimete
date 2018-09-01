@@ -15,7 +15,6 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
@@ -23,17 +22,17 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'u(%t3qg9e%pcxq$83b*(_ror54%u10iyse2jwtcwow&83pfo8t'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-#DEBUG = True
-DEBUG = False
+DEBUG = True
+# DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["*","localhost","0.0.0.0","47.104.95.206","127.0.0.1"]
 
 AUTH_USER_MODEL = 'user.UserProfile'
 
 # Application definition
 
 INSTALLED_APPS = [
-    #'qimete.apps.SuitConfig',
+    # 'qimete.apps.SuitConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -41,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'user.apps.UserConfig',
+    'xinmingcar',
+    # 'xinmingcar.apps.XinmingcarConfig',
     'djcelery',
 ]
 
@@ -59,8 +60,7 @@ ROOT_URLCONF = 'qimete.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
-        ,
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -74,7 +74,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'qimete.wsgi.application'
-
 
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
@@ -91,15 +90,22 @@ DATABASES = {
     }
 }
 
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST = 'smtp.126.com'
+# EMAIL_PORT = 25
+# EMAIL_HOST_USER = 'hllyzms@126.com'
+# EMAIL_HOST_PASSWORD = 'asd123456'  # 开启的那个校验码
+# EMAIL_USE_TLS = False
+# EMAIL_FROM = '哈利路亚<hllyzms@126.com>'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.exmail.qq.com'
 EMAIL_PORT = 465
 EMAIL_HOST_USER = 'peijianbin@qimete.com'
 EMAIL_HOST_PASSWORD = 'HLLYzms//7868'  # 开启的那个校验码
-#EMAIL_USE_TLS = True   # 是否使用TLS安全传输协议(用于在两个通信应用程序之间提供保密性和数据完整性。)
-EMAIL_USE_SSL = True    # 是否使用SSL加密，qq企业邮箱要求使用
-EMAIL_FROM = '骑摩托<peijianbin@qimete.com>'
+EMAIL_USE_TLS = False  # 是否使用TLS安全传输协议(用于在两个通信应用程序之间提供保密性和数据完整性。)
+EMAIL_USE_SSL = True  # 是否使用SSL加密，qq企业邮箱要求使用
+EMAIL_FROM = '哈利路亚<peijianbin@qimete.com>'
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
@@ -119,7 +125,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
@@ -133,21 +138,19 @@ USE_L10N = True
 # 默认是Ture，时间是utc时间，由于我们要用本地时间，所用手动修改为false！！！！
 USE_TZ = False
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
-
-STATIC_URL = '/static/'
-
-STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
-STATIC_ROOT = '/var/www/qimete/static'
+STATIC_URL = '/static/'  # 这个是访问的地址
+STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)  # 这个是实际存储的物理地址
+STATIC_ROOT = '/var/www/qimete/static'  # 这是静态文件将被统一收集的地址
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 import djcelery
+
 djcelery.setup_loader()
 BROKER_URL = 'redis://127.0.0.1:6379/7'
-CELERY_IMPORTS = ('user.tasks', )
+CELERY_IMPORTS = ('user.tasks',)
 CELERY_TIMEZONE = TIME_ZONE
 CELERYBEAT_SCHEDULER = 'djcelery.schedulers.DatabaseScheduler'

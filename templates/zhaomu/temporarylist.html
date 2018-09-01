@@ -1,0 +1,139 @@
+<!doctype html>
+{% load staticfiles %}
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>兼职列表</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache"> 
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<link rel="stylesheet" href="{% static 'css/zhaomu/reset.css' %}">
+	<style>
+		body{
+			font-size: 0.18rem;
+			background-color: #f2f4f8;
+		}
+
+		.top{
+			text-align: center;
+			line-height: 2.5em;
+			color: #fff;
+			background-color: #f86c36;
+		}
+
+		.select{
+			line-height: 2.5em;
+			text-align: center;
+			display: flex;
+			justify-content: space-around;
+			border-bottom: 1px solid #f2f2f2;
+			background-color: #fffaf5;
+		}
+
+		.select p{
+			width: 33%;
+		}
+
+		ul{
+			/* margin-top: 0.1rem; */
+			line-height: 2em;
+			font-size: 0.17rem;
+		}
+
+		ul li{
+			border-bottom: 1px solid #f2f2f2;
+			background-color: #fff;
+			margin-bottom: 0.1rem;
+			padding: 0.1rem 2.5%;
+		}
+
+		li div:nth-child(1){
+			text-align: justify;
+			overflow: hidden;
+		}
+
+		li div:nth-child(1) span:nth-child(2){
+			float: right;
+		}
+
+		li div:nth-child(2){
+			color: #f86c36;
+		}
+
+		li div:nth-child(3){
+			display: flex;
+			justify-content: space-between;
+			color: #aaa;
+		}
+	</style>
+</head>
+<body>
+	<div class="top">
+		招募信息
+	</div>
+	<div class="select">
+		<p>地区</p>
+		<p>类型</p>
+		<p>状态</p>
+	</div>
+	<ul>
+		<li>
+			<div>
+				<span>招聘微信群主，APP推广</span>
+				<span> 全国</span>
+			</div>
+			<div>
+				<span>￥ 20元/小时</span>
+			</div>
+			<div>
+				<p>手机代理</p>
+				<p>120人</p>
+				<p>6月20日前</p>
+			</div>
+		</li>
+		<li>
+			<div>
+				<span>招聘微信群主，APP推广</span>
+				<span> 全国</span>
+			</div>
+			<div>
+				<span>￥ 20元/小时</span>
+			</div>
+			<div>
+				<p>手机代理</p>
+				<p>120人</p>
+				<p>6月20日前</p>
+			</div>
+		</li>
+		<li>
+			<div>
+				<span>招聘微信群主，APP推广</span>
+				<span> 全国</span>
+			</div>
+			<div>
+				<span>￥ 20元/小时</span>
+			</div>
+			<div>
+				<p>手机代理</p>
+				<p>120人</p>
+				<p>6月20日前</p>
+			</div>
+		</li>
+	</ul>
+</body>
+<script>
+	function rem(){
+	  var html=document.getElementsByTagName('html')[0];
+	  var Ww=document.documentElement.clientWidth;
+	  var scale=Ww/360;
+	  html.style.fontSize=scale*100+"px";
+	}
+	rem();
+	window.onresize=function(){
+	  rem();
+	}
+</script>
+</html>

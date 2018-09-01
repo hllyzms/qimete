@@ -1,0 +1,2065 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <link rel="shortcut icon" href="/favicon.ico" sizes="16x16"/>
+    <link rel="shortcut icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+
+    <meta name="description" content=""/>
+
+    <meta property="og:description" content=""/>
+    <meta property="og:title" content="Project initiation form"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://mirumee.typeform.com/to/gf97sQ"/>
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <script type="text/javascript">(window.NREUM || (NREUM = {})).loader_config = {xpid: "Vg8GWVBXGwoCVlJUAgc="};
+    window.NREUM || (NREUM = {}), __nr_require = function (t, e, n) {
+        function r(n) {
+            if (!e[n]) {
+                var o = e[n] = {exports: {}};
+                t[n][0].call(o.exports, function (e) {
+                    var o = t[n][1][e];
+                    return r(o || e)
+                }, o, o.exports)
+            }
+            return e[n].exports
+        }
+
+        if ("function" == typeof __nr_require)return __nr_require;
+        for (var o = 0; o < n.length; o++)r(n[o]);
+        return r
+    }({
+        1: [function (t, e, n) {
+            function r(t) {
+                try {
+                    c.console && console.log(t)
+                } catch (e) {
+                }
+            }
+
+            var o, i = t("ee"), a = t(20), c = {};
+            try {
+                o = localStorage.getItem("__nr_flags").split(","), console && "function" == typeof console.log && (c.console = !0, o.indexOf("dev") !== -1 && (c.dev = !0), o.indexOf("nr_dev") !== -1 && (c.nrDev = !0))
+            } catch (s) {
+            }
+            c.nrDev && i.on("internal-error", function (t) {
+                r(t.stack)
+            }), c.dev && i.on("fn-err", function (t, e, n) {
+                r(n.stack)
+            }), c.dev && (r("NR AGENT IN DEVELOPMENT MODE"), r("flags: " + a(c, function (t, e) {
+                    return t
+                }).join(", ")))
+        }, {}], 2: [function (t, e, n) {
+            function r(t, e, n, r, c) {
+                try {
+                    h ? h -= 1 : o(c || new UncaughtException(t, e, n), !0)
+                } catch (f) {
+                    try {
+                        i("ierr", [f, s.now(), !0])
+                    } catch (d) {
+                    }
+                }
+                return "function" == typeof u && u.apply(this, a(arguments))
+            }
+
+            function UncaughtException(t, e, n) {
+                this.message = t || "Uncaught error with no additional information", this.sourceURL = e, this.line = n
+            }
+
+            function o(t, e) {
+                var n = e ? null : s.now();
+                i("err", [t, n])
+            }
+
+            var i = t("handle"), a = t(21), c = t("ee"), s = t("loader"), f = t("gos"), u = window.onerror, d = !1,
+                p = "nr@seenError", h = 0;
+            s.features.err = !0, t(1), window.onerror = r;
+            try {
+                throw new Error
+            } catch (l) {
+                "stack" in l && (t(13), t(12), "addEventListener" in window && t(6), s.xhrWrappable && t(14), d = !0)
+            }
+            c.on("fn-start", function (t, e, n) {
+                d && (h += 1)
+            }), c.on("fn-err", function (t, e, n) {
+                d && !n[p] && (f(n, p, function () {
+                    return !0
+                }), this.thrown = !0, o(n))
+            }), c.on("fn-end", function () {
+                d && !this.thrown && h > 0 && (h -= 1)
+            }), c.on("internal-error", function (t) {
+                i("ierr", [t, s.now(), !0])
+            })
+        }, {}], 3: [function (t, e, n) {
+            t("loader").features.ins = !0
+        }, {}], 4: [function (t, e, n) {
+            function r() {
+                M++, S = y.hash, this[u] = b.now()
+            }
+
+            function o() {
+                M--, y.hash !== S && i(0, !0);
+                var t = b.now();
+                this[l] = ~~this[l] + t - this[u], this[d] = t
+            }
+
+            function i(t, e) {
+                E.emit("newURL", ["" + y, e])
+            }
+
+            function a(t, e) {
+                t.on(e, function () {
+                    this[e] = b.now()
+                })
+            }
+
+            var c = "-start", s = "-end", f = "-body", u = "fn" + c, d = "fn" + s, p = "cb" + c, h = "cb" + s,
+                l = "jsTime", m = "fetch", v = "addEventListener", w = window, y = w.location, b = t("loader");
+            if (w[v] && b.xhrWrappable) {
+                var g = t(10), x = t(11), E = t(8), P = t(6), O = t(13), R = t(7), T = t(14), L = t(9), j = t("ee"),
+                    N = j.get("tracer");
+                t(15), b.features.spa = !0;
+                var S, M = 0;
+                j.on(u, r), j.on(p, r), j.on(d, o), j.on(h, o), j.buffer([u, d, "xhr-done", "xhr-resolved"]), P.buffer([u]), O.buffer(["setTimeout" + s, "clearTimeout" + c, u]), T.buffer([u, "new-xhr", "send-xhr" + c]), R.buffer([m + c, m + "-done", m + f + c, m + f + s]), E.buffer(["newURL"]), g.buffer([u]), x.buffer(["propagate", p, h, "executor-err", "resolve" + c]), N.buffer([u, "no-" + u]), L.buffer(["new-jsonp", "cb-start", "jsonp-error", "jsonp-end"]), a(T, "send-xhr" + c), a(j, "xhr-resolved"), a(j, "xhr-done"), a(R, m + c), a(R, m + "-done"), a(L, "new-jsonp"), a(L, "jsonp-end"), a(L, "cb-start"), E.on("pushState-end", i), E.on("replaceState-end", i), w[v]("hashchange", i, !0), w[v]("load", i, !0), w[v]("popstate", function () {
+                    i(0, M > 1)
+                }, !0)
+            }
+        }, {}], 5: [function (t, e, n) {
+            function r(t) {
+            }
+
+            if (window.performance && window.performance.timing && window.performance.getEntriesByType) {
+                var o = t("ee"), i = t("handle"), a = t(13), c = t(12), s = "learResourceTimings",
+                    f = "addEventListener", u = "resourcetimingbufferfull", d = "bstResource", p = "resource",
+                    h = "-start", l = "-end", m = "fn" + h, v = "fn" + l, w = "bstTimer", y = "pushState",
+                    b = t("loader");
+                b.features.stn = !0, t(8);
+                var g = NREUM.o.EV;
+                o.on(m, function (t, e) {
+                    var n = t[0];
+                    n instanceof g && (this.bstStart = b.now())
+                }), o.on(v, function (t, e) {
+                    var n = t[0];
+                    n instanceof g && i("bst", [n, e, this.bstStart, b.now()])
+                }), a.on(m, function (t, e, n) {
+                    this.bstStart = b.now(), this.bstType = n
+                }), a.on(v, function (t, e) {
+                    i(w, [e, this.bstStart, b.now(), this.bstType])
+                }), c.on(m, function () {
+                    this.bstStart = b.now()
+                }), c.on(v, function (t, e) {
+                    i(w, [e, this.bstStart, b.now(), "requestAnimationFrame"])
+                }), o.on(y + h, function (t) {
+                    this.time = b.now(), this.startPath = location.pathname + location.hash
+                }), o.on(y + l, function (t) {
+                    i("bstHist", [location.pathname + location.hash, this.startPath, this.time])
+                }), f in window.performance && (window.performance["c" + s] ? window.performance[f](u, function (t) {
+                    i(d, [window.performance.getEntriesByType(p)]), window.performance["c" + s]()
+                }, !1) : window.performance[f]("webkit" + u, function (t) {
+                    i(d, [window.performance.getEntriesByType(p)]), window.performance["webkitC" + s]()
+                }, !1)), document[f]("scroll", r, {passive: !0}), document[f]("keypress", r, !1), document[f]("click", r, !1)
+            }
+        }, {}], 6: [function (t, e, n) {
+            function r(t) {
+                for (var e = t; e && !e.hasOwnProperty(u);)e = Object.getPrototypeOf(e);
+                e && o(e)
+            }
+
+            function o(t) {
+                c.inPlace(t, [u, d], "-", i)
+            }
+
+            function i(t, e) {
+                return t[1]
+            }
+
+            var a = t("ee").get("events"), c = t(23)(a, !0), s = t("gos"), f = XMLHttpRequest, u = "addEventListener",
+                d = "removeEventListener";
+            e.exports = a, "getPrototypeOf" in Object ? (r(document), r(window), r(f.prototype)) : f.prototype.hasOwnProperty(u) && (o(window), o(f.prototype)), a.on(u + "-start", function (t, e) {
+                var n = t[1], r = s(n, "nr@wrapped", function () {
+                    function t() {
+                        if ("function" == typeof n.handleEvent)return n.handleEvent.apply(n, arguments)
+                    }
+
+                    var e = {object: t, "function": n}[typeof n];
+                    return e ? c(e, "fn-", null, e.name || "anonymous") : n
+                });
+                this.wrapped = t[1] = r
+            }), a.on(d + "-start", function (t) {
+                t[1] = this.wrapped || t[1]
+            })
+        }, {}], 7: [function (t, e, n) {
+            function r(t, e, n) {
+                var r = t[e];
+                "function" == typeof r && (t[e] = function () {
+                    var t = r.apply(this, arguments);
+                    return o.emit(n + "start", arguments, t), t.then(function (e) {
+                        return o.emit(n + "end", [null, e], t), e
+                    }, function (e) {
+                        throw o.emit(n + "end", [e], t), e
+                    })
+                })
+            }
+
+            var o = t("ee").get("fetch"), i = t(20);
+            e.exports = o;
+            var a = window, c = "fetch-", s = c + "body-", f = ["arrayBuffer", "blob", "json", "text", "formData"],
+                u = a.Request, d = a.Response, p = a.fetch, h = "prototype";
+            u && d && p && (i(f, function (t, e) {
+                r(u[h], e, s), r(d[h], e, s)
+            }), r(a, "fetch", c), o.on(c + "end", function (t, e) {
+                var n = this;
+                e ? e.clone().arrayBuffer().then(function (t) {
+                    n.rxSize = t.byteLength, o.emit(c + "done", [null, e], n)
+                }) : o.emit(c + "done", [t], n)
+            }))
+        }, {}], 8: [function (t, e, n) {
+            var r = t("ee").get("history"), o = t(23)(r);
+            e.exports = r, o.inPlace(window.history, ["pushState", "replaceState"], "-")
+        }, {}], 9: [function (t, e, n) {
+            function r(t) {
+                function e() {
+                    s.emit("jsonp-end", [], p), t.removeEventListener("load", e, !1), t.removeEventListener("error", n, !1)
+                }
+
+                function n() {
+                    s.emit("jsonp-error", [], p), s.emit("jsonp-end", [], p), t.removeEventListener("load", e, !1), t.removeEventListener("error", n, !1)
+                }
+
+                var r = t && "string" == typeof t.nodeName && "script" === t.nodeName.toLowerCase();
+                if (r) {
+                    var o = "function" == typeof t.addEventListener;
+                    if (o) {
+                        var a = i(t.src);
+                        if (a) {
+                            var u = c(a), d = "function" == typeof u.parent[u.key];
+                            if (d) {
+                                var p = {};
+                                f.inPlace(u.parent, [u.key], "cb-", p), t.addEventListener("load", e, !1), t.addEventListener("error", n, !1), s.emit("new-jsonp", [t.src], p)
+                            }
+                        }
+                    }
+                }
+            }
+
+            function o() {
+                return "addEventListener" in window
+            }
+
+            function i(t) {
+                var e = t.match(u);
+                return e ? e[1] : null
+            }
+
+            function a(t, e) {
+                var n = t.match(p), r = n[1], o = n[3];
+                return o ? a(o, e[r]) : e[r]
+            }
+
+            function c(t) {
+                var e = t.match(d);
+                return e && e.length >= 3 ? {key: e[2], parent: a(e[1], window)} : {key: t, parent: window}
+            }
+
+            var s = t("ee").get("jsonp"), f = t(23)(s);
+            if (e.exports = s, o()) {
+                var u = /[?&](?:callback|cb)=([^&#]+)/, d = /(.*)\.([^.]+)/, p = /^(\w+)(\.|$)(.*)$/,
+                    h = ["appendChild", "insertBefore", "replaceChild"];
+                f.inPlace(HTMLElement.prototype, h, "dom-"), f.inPlace(HTMLHeadElement.prototype, h, "dom-"), f.inPlace(HTMLBodyElement.prototype, h, "dom-"), s.on("dom-start", function (t) {
+                    r(t[0])
+                })
+            }
+        }, {}], 10: [function (t, e, n) {
+            var r = t("ee").get("mutation"), o = t(23)(r), i = NREUM.o.MO;
+            e.exports = r, i && (window.MutationObserver = function (t) {
+                return this instanceof i ? new i(o(t, "fn-")) : i.apply(this, arguments)
+            }, MutationObserver.prototype = i.prototype)
+        }, {}], 11: [function (t, e, n) {
+            function r(t) {
+                var e = a.context(), n = c(t, "executor-", e), r = new f(n);
+                return a.context(r).getCtx = function () {
+                    return e
+                }, a.emit("new-promise", [r, e], e), r
+            }
+
+            function o(t, e) {
+                return e
+            }
+
+            var i = t(23), a = t("ee").get("promise"), c = i(a), s = t(20), f = NREUM.o.PR;
+            e.exports = a, f && (window.Promise = r, ["all", "race"].forEach(function (t) {
+                var e = f[t];
+                f[t] = function (n) {
+                    function r(t) {
+                        return function () {
+                            a.emit("propagate", [null, !o], i), o = o || !t
+                        }
+                    }
+
+                    var o = !1;
+                    s(n, function (e, n) {
+                        Promise.resolve(n).then(r("all" === t), r(!1))
+                    });
+                    var i = e.apply(f, arguments), c = f.resolve(i);
+                    return c
+                }
+            }), ["resolve", "reject"].forEach(function (t) {
+                var e = f[t];
+                f[t] = function (t) {
+                    var n = e.apply(f, arguments);
+                    return t !== n && a.emit("propagate", [t, !0], n), n
+                }
+            }), f.prototype["catch"] = function (t) {
+                return this.then(null, t)
+            }, f.prototype = Object.create(f.prototype, {constructor: {value: r}}), s(Object.getOwnPropertyNames(f), function (t, e) {
+                try {
+                    r[e] = f[e]
+                } catch (n) {
+                }
+            }), a.on("executor-start", function (t) {
+                t[0] = c(t[0], "resolve-", this), t[1] = c(t[1], "resolve-", this)
+            }), a.on("executor-err", function (t, e, n) {
+                t[1](n)
+            }), c.inPlace(f.prototype, ["then"], "then-", o), a.on("then-start", function (t, e) {
+                this.promise = e, t[0] = c(t[0], "cb-", this), t[1] = c(t[1], "cb-", this)
+            }), a.on("then-end", function (t, e, n) {
+                this.nextPromise = n;
+                var r = this.promise;
+                a.emit("propagate", [r, !0], n)
+            }), a.on("cb-end", function (t, e, n) {
+                a.emit("propagate", [n, !0], this.nextPromise)
+            }), a.on("propagate", function (t, e, n) {
+                this.getCtx && !e || (this.getCtx = function () {
+                    if (t instanceof Promise)var e = a.context(t);
+                    return e && e.getCtx ? e.getCtx() : this
+                })
+            }), r.toString = function () {
+                return "" + f
+            })
+        }, {}], 12: [function (t, e, n) {
+            var r = t("ee").get("raf"), o = t(23)(r), i = "equestAnimationFrame";
+            e.exports = r, o.inPlace(window, ["r" + i, "mozR" + i, "webkitR" + i, "msR" + i], "raf-"), r.on("raf-start", function (t) {
+                t[0] = o(t[0], "fn-")
+            })
+        }, {}], 13: [function (t, e, n) {
+            function r(t, e, n) {
+                t[0] = a(t[0], "fn-", null, n)
+            }
+
+            function o(t, e, n) {
+                this.method = n, this.timerDuration = isNaN(t[1]) ? 0 : +t[1], t[0] = a(t[0], "fn-", this, n)
+            }
+
+            var i = t("ee").get("timer"), a = t(23)(i), c = "setTimeout", s = "setInterval", f = "clearTimeout",
+                u = "-start", d = "-";
+            e.exports = i, a.inPlace(window, [c, "setImmediate"], c + d), a.inPlace(window, [s], s + d), a.inPlace(window, [f, "clearImmediate"], f + d), i.on(s + u, r), i.on(c + u, o)
+        }, {}], 14: [function (t, e, n) {
+            function r(t, e) {
+                d.inPlace(e, ["onreadystatechange"], "fn-", c)
+            }
+
+            function o() {
+                var t = this, e = u.context(t);
+                t.readyState > 3 && !e.resolved && (e.resolved = !0, u.emit("xhr-resolved", [], t)), d.inPlace(t, y, "fn-", c)
+            }
+
+            function i(t) {
+                b.push(t), l && (x ? x.then(a) : v ? v(a) : (E = -E, P.data = E))
+            }
+
+            function a() {
+                for (var t = 0; t < b.length; t++)r([], b[t]);
+                b.length && (b = [])
+            }
+
+            function c(t, e) {
+                return e
+            }
+
+            function s(t, e) {
+                for (var n in t)e[n] = t[n];
+                return e
+            }
+
+            t(6);
+            var f = t("ee"), u = f.get("xhr"), d = t(23)(u), p = NREUM.o, h = p.XHR, l = p.MO, m = p.PR, v = p.SI,
+                w = "readystatechange",
+                y = ["onload", "onerror", "onabort", "onloadstart", "onloadend", "onprogress", "ontimeout"], b = [];
+            e.exports = u;
+            var g = window.XMLHttpRequest = function (t) {
+                var e = new h(t);
+                try {
+                    u.emit("new-xhr", [e], e), e.addEventListener(w, o, !1)
+                } catch (n) {
+                    try {
+                        u.emit("internal-error", [n])
+                    } catch (r) {
+                    }
+                }
+                return e
+            };
+            if (s(h, g), g.prototype = h.prototype, d.inPlace(g.prototype, ["open", "send"], "-xhr-", c), u.on("send-xhr-start", function (t, e) {
+                    r(t, e), i(e)
+                }), u.on("open-xhr-start", r), l) {
+                var x = m && m.resolve();
+                if (!v && !m) {
+                    var E = 1, P = document.createTextNode(E);
+                    new l(a).observe(P, {characterData: !0})
+                }
+            } else f.on("fn-end", function (t) {
+                t[0] && t[0].type === w || a()
+            })
+        }, {}], 15: [function (t, e, n) {
+            function r(t) {
+                var e = this.params, n = this.metrics;
+                if (!this.ended) {
+                    this.ended = !0;
+                    for (var r = 0; r < d; r++)t.removeEventListener(u[r], this.listener, !1);
+                    if (!e.aborted) {
+                        if (n.duration = a.now() - this.startTime, 4 === t.readyState) {
+                            e.status = t.status;
+                            var i = o(t, this.lastSize);
+                            if (i && (n.rxSize = i), this.sameOrigin) {
+                                var s = t.getResponseHeader("X-NewRelic-App-Data");
+                                s && (e.cat = s.split(", ").pop())
+                            }
+                        } else e.status = 0;
+                        n.cbTime = this.cbTime, f.emit("xhr-done", [t], t), c("xhr", [e, n, this.startTime])
+                    }
+                }
+            }
+
+            function o(t, e) {
+                var n = t.responseType;
+                if ("json" === n && null !== e)return e;
+                var r = "arraybuffer" === n || "blob" === n || "json" === n ? t.response : t.responseText;
+                return l(r)
+            }
+
+            function i(t, e) {
+                var n = s(e), r = t.params;
+                r.host = n.hostname + ":" + n.port, r.pathname = n.pathname, t.sameOrigin = n.sameOrigin
+            }
+
+            var a = t("loader");
+            if (a.xhrWrappable) {
+                var c = t("handle"), s = t(16), f = t("ee"), u = ["load", "error", "abort", "timeout"], d = u.length,
+                    p = t("id"), h = t(19), l = t(18), m = window.XMLHttpRequest;
+                a.features.xhr = !0, t(14), f.on("new-xhr", function (t) {
+                    var e = this;
+                    e.totalCbs = 0, e.called = 0, e.cbTime = 0, e.end = r, e.ended = !1, e.xhrGuids = {}, e.lastSize = null, h && (h > 34 || h < 10) || window.opera || t.addEventListener("progress", function (t) {
+                        e.lastSize = t.loaded
+                    }, !1)
+                }), f.on("open-xhr-start", function (t) {
+                    this.params = {method: t[0]}, i(this, t[1]), this.metrics = {}
+                }), f.on("open-xhr-end", function (t, e) {
+                    "loader_config" in NREUM && "xpid" in NREUM.loader_config && this.sameOrigin && e.setRequestHeader("X-NewRelic-ID", NREUM.loader_config.xpid)
+                }), f.on("send-xhr-start", function (t, e) {
+                    var n = this.metrics, r = t[0], o = this;
+                    if (n && r) {
+                        var i = l(r);
+                        i && (n.txSize = i)
+                    }
+                    this.startTime = a.now(), this.listener = function (t) {
+                        try {
+                            "abort" === t.type && (o.params.aborted = !0), ("load" !== t.type || o.called === o.totalCbs && (o.onloadCalled || "function" != typeof e.onload)) && o.end(e)
+                        } catch (n) {
+                            try {
+                                f.emit("internal-error", [n])
+                            } catch (r) {
+                            }
+                        }
+                    };
+                    for (var c = 0; c < d; c++)e.addEventListener(u[c], this.listener, !1)
+                }), f.on("xhr-cb-time", function (t, e, n) {
+                    this.cbTime += t, e ? this.onloadCalled = !0 : this.called += 1, this.called !== this.totalCbs || !this.onloadCalled && "function" == typeof n.onload || this.end(n)
+                }), f.on("xhr-load-added", function (t, e) {
+                    var n = "" + p(t) + !!e;
+                    this.xhrGuids && !this.xhrGuids[n] && (this.xhrGuids[n] = !0, this.totalCbs += 1)
+                }), f.on("xhr-load-removed", function (t, e) {
+                    var n = "" + p(t) + !!e;
+                    this.xhrGuids && this.xhrGuids[n] && (delete this.xhrGuids[n], this.totalCbs -= 1)
+                }), f.on("addEventListener-end", function (t, e) {
+                    e instanceof m && "load" === t[0] && f.emit("xhr-load-added", [t[1], t[2]], e)
+                }), f.on("removeEventListener-end", function (t, e) {
+                    e instanceof m && "load" === t[0] && f.emit("xhr-load-removed", [t[1], t[2]], e)
+                }), f.on("fn-start", function (t, e, n) {
+                    e instanceof m && ("onload" === n && (this.onload = !0), ("load" === (t[0] && t[0].type) || this.onload) && (this.xhrCbStart = a.now()))
+                }), f.on("fn-end", function (t, e) {
+                    this.xhrCbStart && f.emit("xhr-cb-time", [a.now() - this.xhrCbStart, this.onload, e], e)
+                })
+            }
+        }, {}], 16: [function (t, e, n) {
+            e.exports = function (t) {
+                var e = document.createElement("a"), n = window.location, r = {};
+                e.href = t, r.port = e.port;
+                var o = e.href.split("://");
+                !r.port && o[1] && (r.port = o[1].split("/")[0].split("@").pop().split(":")[1]), r.port && "0" !== r.port || (r.port = "https" === o[0] ? "443" : "80"), r.hostname = e.hostname || n.hostname, r.pathname = e.pathname, r.protocol = o[0], "/" !== r.pathname.charAt(0) && (r.pathname = "/" + r.pathname);
+                var i = !e.protocol || ":" === e.protocol || e.protocol === n.protocol,
+                    a = e.hostname === document.domain && e.port === n.port;
+                return r.sameOrigin = i && (!e.hostname || a), r
+            }
+        }, {}], 17: [function (t, e, n) {
+            function r() {
+            }
+
+            function o(t, e, n) {
+                return function () {
+                    return i(t, [f.now()].concat(c(arguments)), e ? null : this, n), e ? void 0 : this
+                }
+            }
+
+            var i = t("handle"), a = t(20), c = t(21), s = t("ee").get("tracer"), f = t("loader"), u = NREUM;
+            "undefined" == typeof window.newrelic && (newrelic = u);
+            var d = ["setPageViewName", "setCustomAttribute", "setErrorHandler", "finished", "addToTrace", "inlineHit", "addRelease"],
+                p = "api-", h = p + "ixn-";
+            a(d, function (t, e) {
+                u[e] = o(p + e, !0, "api")
+            }), u.addPageAction = o(p + "addPageAction", !0), u.setCurrentRouteName = o(p + "routeName", !0), e.exports = newrelic, u.interaction = function () {
+                return (new r).get()
+            };
+            var l = r.prototype = {
+                createTracer: function (t, e) {
+                    var n = {}, r = this, o = "function" == typeof e;
+                    return i(h + "tracer", [f.now(), t, n], r), function () {
+                        if (s.emit((o ? "" : "no-") + "fn-start", [f.now(), r, o], n), o)try {
+                            return e.apply(this, arguments)
+                        } catch (t) {
+                            throw s.emit("fn-err", [arguments, this, t], n), t
+                        } finally {
+                            s.emit("fn-end", [f.now()], n)
+                        }
+                    }
+                }
+            };
+            a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","), function (t, e) {
+                l[e] = o(h + e)
+            }), newrelic.noticeError = function (t) {
+                "string" == typeof t && (t = new Error(t)), i("err", [t, f.now()])
+            }
+        }, {}], 18: [function (t, e, n) {
+            e.exports = function (t) {
+                if ("string" == typeof t && t.length)return t.length;
+                if ("object" == typeof t) {
+                    if ("undefined" != typeof ArrayBuffer && t instanceof ArrayBuffer && t.byteLength)return t.byteLength;
+                    if ("undefined" != typeof Blob && t instanceof Blob && t.size)return t.size;
+                    if (!("undefined" != typeof FormData && t instanceof FormData))try {
+                        return JSON.stringify(t).length
+                    } catch (e) {
+                        return
+                    }
+                }
+            }
+        }, {}], 19: [function (t, e, n) {
+            var r = 0, o = navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);
+            o && (r = +o[1]), e.exports = r
+        }, {}], 20: [function (t, e, n) {
+            function r(t, e) {
+                var n = [], r = "", i = 0;
+                for (r in t)o.call(t, r) && (n[i] = e(r, t[r]), i += 1);
+                return n
+            }
+
+            var o = Object.prototype.hasOwnProperty;
+            e.exports = r
+        }, {}], 21: [function (t, e, n) {
+            function r(t, e, n) {
+                e || (e = 0), "undefined" == typeof n && (n = t ? t.length : 0);
+                for (var r = -1, o = n - e || 0, i = Array(o < 0 ? 0 : o); ++r < o;)i[r] = t[e + r];
+                return i
+            }
+
+            e.exports = r
+        }, {}], 22: [function (t, e, n) {
+            e.exports = {exists: "undefined" != typeof window.performance && window.performance.timing && "undefined" != typeof window.performance.timing.navigationStart}
+        }, {}], 23: [function (t, e, n) {
+            function r(t) {
+                return !(t && t instanceof Function && t.apply && !t[a])
+            }
+
+            var o = t("ee"), i = t(21), a = "nr@original", c = Object.prototype.hasOwnProperty, s = !1;
+            e.exports = function (t, e) {
+                function n(t, e, n, o) {
+                    function nrWrapper() {
+                        var r, a, c, s;
+                        try {
+                            a = this, r = i(arguments), c = "function" == typeof n ? n(r, a) : n || {}
+                        } catch (f) {
+                            p([f, "", [r, a, o], c])
+                        }
+                        u(e + "start", [r, a, o], c);
+                        try {
+                            return s = t.apply(a, r)
+                        } catch (d) {
+                            throw u(e + "err", [r, a, d], c), d
+                        } finally {
+                            u(e + "end", [r, a, s], c)
+                        }
+                    }
+
+                    return r(t) ? t : (e || (e = ""), nrWrapper[a] = t, d(t, nrWrapper), nrWrapper)
+                }
+
+                function f(t, e, o, i) {
+                    o || (o = "");
+                    var a, c, s, f = "-" === o.charAt(0);
+                    for (s = 0; s < e.length; s++)c = e[s], a = t[c], r(a) || (t[c] = n(a, f ? c + o : o, i, c))
+                }
+
+                function u(n, r, o) {
+                    if (!s || e) {
+                        var i = s;
+                        s = !0;
+                        try {
+                            t.emit(n, r, o, e)
+                        } catch (a) {
+                            p([a, n, r, o])
+                        }
+                        s = i
+                    }
+                }
+
+                function d(t, e) {
+                    if (Object.defineProperty && Object.keys)try {
+                        var n = Object.keys(t);
+                        return n.forEach(function (n) {
+                            Object.defineProperty(e, n, {
+                                get: function () {
+                                    return t[n]
+                                }, set: function (e) {
+                                    return t[n] = e, e
+                                }
+                            })
+                        }), e
+                    } catch (r) {
+                        p([r])
+                    }
+                    for (var o in t)c.call(t, o) && (e[o] = t[o]);
+                    return e
+                }
+
+                function p(e) {
+                    try {
+                        t.emit("internal-error", e)
+                    } catch (n) {
+                    }
+                }
+
+                return t || (t = o), n.inPlace = f, n.flag = a, n
+            }
+        }, {}], ee: [function (t, e, n) {
+            function r() {
+            }
+
+            function o(t) {
+                function e(t) {
+                    return t && t instanceof r ? t : t ? s(t, c, i) : i()
+                }
+
+                function n(n, r, o, i) {
+                    if (!p.aborted || i) {
+                        t && t(n, r, o);
+                        for (var a = e(o), c = l(n), s = c.length, f = 0; f < s; f++)c[f].apply(a, r);
+                        var d = u[y[n]];
+                        return d && d.push([b, n, r, a]), a
+                    }
+                }
+
+                function h(t, e) {
+                    w[t] = l(t).concat(e)
+                }
+
+                function l(t) {
+                    return w[t] || []
+                }
+
+                function m(t) {
+                    return d[t] = d[t] || o(n)
+                }
+
+                function v(t, e) {
+                    f(t, function (t, n) {
+                        e = e || "feature", y[n] = e, e in u || (u[e] = [])
+                    })
+                }
+
+                var w = {}, y = {},
+                    b = {on: h, emit: n, get: m, listeners: l, context: e, buffer: v, abort: a, aborted: !1};
+                return b
+            }
+
+            function i() {
+                return new r
+            }
+
+            function a() {
+                (u.api || u.feature) && (p.aborted = !0, u = p.backlog = {})
+            }
+
+            var c = "nr@context", s = t("gos"), f = t(20), u = {}, d = {}, p = e.exports = o();
+            p.backlog = u
+        }, {}], gos: [function (t, e, n) {
+            function r(t, e, n) {
+                if (o.call(t, e))return t[e];
+                var r = n();
+                if (Object.defineProperty && Object.keys)try {
+                    return Object.defineProperty(t, e, {value: r, writable: !0, enumerable: !1}), r
+                } catch (i) {
+                }
+                return t[e] = r, r
+            }
+
+            var o = Object.prototype.hasOwnProperty;
+            e.exports = r
+        }, {}], handle: [function (t, e, n) {
+            function r(t, e, n, r) {
+                o.buffer([t], r), o.emit(t, e, n)
+            }
+
+            var o = t("ee").get("handle");
+            e.exports = r, r.ee = o
+        }, {}], id: [function (t, e, n) {
+            function r(t) {
+                var e = typeof t;
+                return !t || "object" !== e && "function" !== e ? -1 : t === window ? 0 : a(t, i, function () {
+                    return o++
+                })
+            }
+
+            var o = 1, i = "nr@id", a = t("gos");
+            e.exports = r
+        }, {}], loader: [function (t, e, n) {
+            function r() {
+                if (!x++) {
+                    var t = g.info = NREUM.info, e = p.getElementsByTagName("script")[0];
+                    if (setTimeout(u.abort, 3e4), !(t && t.licenseKey && t.applicationID && e))return u.abort();
+                    f(y, function (e, n) {
+                        t[e] || (t[e] = n)
+                    }), s("mark", ["onload", a() + g.offset], null, "api");
+                    var n = p.createElement("script");
+                    n.src = "https://" + t.agent, e.parentNode.insertBefore(n, e)
+                }
+            }
+
+            function o() {
+                "complete" === p.readyState && i()
+            }
+
+            function i() {
+                s("mark", ["domContent", a() + g.offset], null, "api")
+            }
+
+            function a() {
+                return E.exists && performance.now ? Math.round(performance.now()) : (c = Math.max((new Date).getTime(), c)) - g.offset
+            }
+
+            var c = (new Date).getTime(), s = t("handle"), f = t(20), u = t("ee"), d = window, p = d.document,
+                h = "addEventListener", l = "attachEvent", m = d.XMLHttpRequest, v = m && m.prototype;
+            NREUM.o = {
+                ST: setTimeout,
+                SI: d.setImmediate,
+                CT: clearTimeout,
+                XHR: m,
+                REQ: d.Request,
+                EV: d.Event,
+                PR: d.Promise,
+                MO: d.MutationObserver
+            };
+            var w = "" + location, y = {
+                    beacon: "bam.nr-data.net",
+                    errorBeacon: "bam.nr-data.net",
+                    agent: "js-agent.newrelic.com/nr-spa-1071.min.js"
+                }, b = m && v && v[h] && !/CriOS/.test(navigator.userAgent),
+                g = e.exports = {offset: c, now: a, origin: w, features: {}, xhrWrappable: b};
+            t(17), p[h] ? (p[h]("DOMContentLoaded", i, !1), d[h]("load", r, !1)) : (p[l]("onreadystatechange", o), d[l]("onload", r)), s("mark", ["firstbyte", c], null, "api");
+            var x = 0, E = t(22)
+        }, {}]
+    }, {}, ["loader", 2, 15, 5, 3, 4]);</script>
+    <meta name="format-detection" content="telephone=no"/>
+    <script type="text/template" id="stripe-field-description">
+        <div class="stripe-description">
+            <p><%=price%></p>
+            <p><%=advice%></p>
+            <a href="http://www.stripe.com" target="_blank" class="stripe-logo">
+                <%=stripeBanner%>
+            </a>
+        </div>
+    </script>
+    <script type="text/template" id="stripe-logo">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		 width="81.216px" height="33.225px" viewBox="0 0 81.216 33.225" enable-background="new 0 0 81.216 33.225" xml:space="preserve">
+		<g>
+			<defs>
+				<path id="SVGID_1_" d="M39.262,26.75h6.475V8.69h-6.475V26.75z M0,14.244c0,3.306,2.181,4.533,3.715,5.248l0.818,0.375
+					c1.056,0.478,1.533,0.785,1.533,1.466c0,0.884-0.75,1.021-1.738,1.021c-0.886,0-2.896-0.477-4.056-0.783v4.668
+					c1.33,0.408,3.306,0.852,5.18,0.852c2.896,0,6.952-0.682,6.952-6.132c0-3.408-2.215-4.566-3.817-5.282l-0.681-0.307
+					c-1.125-0.512-1.602-0.75-1.602-1.466c0-0.681,0.579-0.886,1.363-0.886c1.158,0,3.101,0.409,4.055,0.716V9.201
+					C10.905,8.895,9.337,8.35,6.952,8.35C3.783,8.35,0,9.405,0,14.244 M32.82,10.428l-0.954-1.738H26.72V26.75h6.475v-12.37
+					c0.341-0.204,1.125-0.613,2.147-0.613c0.886,0,1.738,0.17,2.385,0.341V8.724c-0.307-0.17-0.988-0.374-2.011-0.374
+					C34.217,8.35,33.195,9.304,32.82,10.428 M54.939,22.387v-8.722c0.408-0.238,1.158-0.545,1.533-0.545
+					c1.057,0,1.363,0.442,1.363,4.498c0,3.986-0.682,4.941-1.805,4.941C55.791,22.559,55.246,22.491,54.939,22.387 M54.667,9.814
+					l-0.955-1.125h-5.248v24.536h6.475v-6.51c0.613,0.137,1.465,0.375,2.283,0.375c2.385,0,7.088-0.135,7.088-9.472
+					c0-8.52-3.135-9.269-5.793-9.269C57.052,8.35,55.656,8.929,54.667,9.814 M73.992,12.2c1.191,0,1.191,1.737,1.191,4.157h-2.725
+					C72.525,14.21,72.355,12.2,73.992,12.2 M66.017,17.789c0,8.655,4.941,9.301,8.996,9.301c2.25,0,4.533-0.646,5.283-0.92v-4.703
+					c-0.955,0.169-3.443,0.716-5.283,0.716c-1.602,0-2.555-0.375-2.555-2.317h8.758v-2.146c0-7.225-3.033-9.371-7.225-9.371
+					C69.902,8.35,66.017,10.155,66.017,17.789 M16.291,4.601l-0.818,4.089h-2.385v4.124h2.385v9.064c0,5.01,3.442,5.213,5.283,5.213
+					c1.431,0,3.612-0.34,4.6-0.578v-4.602c-0.477,0.068-1.908,0.273-2.317,0.273c-0.716,0-1.091-0.238-1.091-1.464v-7.906h2.556
+					l0.852-4.124h-3.408V3.237L16.291,4.601z M39.296,3.237c0,1.772,1.397,3.237,3.203,3.237c1.807,0,3.203-1.465,3.203-3.237
+					C45.702,1.466,44.306,0,42.5,0C40.693,0,39.296,1.466,39.296,3.237"/>
+			</defs>
+			<use xlink:href="#SVGID_1_"  overflow="visible"/>
+		</g>
+	</svg>
+    </script>
+    <script type="text/template" id="stripe-logo-fallback">
+        <b>Stripe</b>
+    </script>
+
+    <title>Project initiation form</title>
+    <style>
+        body {
+            height: 100%;
+            background-color: #F2EFE4;
+            overflow: hidden;
+        }
+
+        body.preload * {
+            visibility: hidden;
+        }
+
+        body.transparent-background.resizing * {
+            visibility: hidden;
+        }
+
+        body.transparent-background {
+            background: transparent;
+        }
+
+        body.transparent-background #loader {
+            background: transparent;
+        }
+
+        #loader {
+            background-color: #F2EFE4;
+            position: absolute;
+            position: fixed;
+            z-index: 999999;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            visibility: visible;
+        }
+
+        #loader * {
+            visibility: visible;
+        }
+
+        #loader > .wrapper {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+
+        #loadingLogo span {
+            display: block;
+            position: absolute;
+            width: 100px;
+            top: 50px;
+            left: -50px;
+            text-align: center;
+
+            font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            font-size: 11px;
+            color: #083858;
+            -khtml-opacity: 0.6;
+            -moz-opacity: 0.6;
+            opacity: 0.6;
+        }
+
+        #loadingLogo svg {
+            position: absolute;
+            top: 64px;
+            left: -35px;
+        }
+
+        #loadingLogo svg path,
+        #loadingLogo svg rect,
+        #loadingLogo svg polygon {
+            fill: #083858;
+        }
+
+        @font-face {
+            font-family: 'typeIconFont';
+            src: url('//dkl3g0z0k6qzr.cloudfront.net/quickyformadmin/css/fonts/typeform_glyphs.eot');
+            src: url('//dkl3g0z0k6qzr.cloudfront.net/quickyformadmin/css/fonts/typeform_glyphs.eot?#iefix') format('embedded-opentype'),
+            url('//dkl3g0z0k6qzr.cloudfront.net/quickyformadmin/css/fonts/typeform_glyphs.woff') format('woff'),
+            url('//dkl3g0z0k6qzr.cloudfront.net/quickyformadmin/css/fonts/typeform_glyphs.ttf') format('truetype'),
+            url('//dkl3g0z0k6qzr.cloudfront.net/quickyformadmin/css/fonts/typeform_glyphs.svg#typeform_glyphs') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+    </style>
+
+
+    <script type="text/javascript">
+        var settings = {
+            browser: "default",
+            uid: "gf97sQ",
+            language: "en",
+            paths: {
+                submit: "/app/form/submit/gf97sQ",
+                token: "/app/form/result/token/gf97sQ/default"
+            },
+            uniquePath: "/app/form/field/unique/",
+            uploadPath: "/app/form/0/field/uploadCredentials/",
+            signupPath: "//mirumee.typeform.com/signup",
+            lessPath: "/bundles/quickyformapp/css/",
+            parent: "",
+            hiddenFieldsEnabled: true,
+            hiddenFields: [],
+            font: 'Source+Sans+Pro:400,700',
+            showLogo: '',
+            createdAt: '2013-11-07T18:14:26+0000',
+            accountId: '31583',
+            userId: '31583',
+            accountPlan: 'Pro',
+            stripePublishableKey: '',
+            showLoadingBranding: false,
+            colors: {
+                primary: '#083858',
+                secondary: '#181B28'
+            },
+            baseAssetPath: '//dkl3g0z0k6qzr.cloudfront.net/',
+            collect: true,
+            "featureToggles": {
+                "retrySubmitEnabled": true
+            },
+            redirectAfterSubmitEnabled: false,
+            redirectAfterSubmitUrl: '',
+            embedCloseAfterSubmitEnabled: false,
+            formId: '34510',
+            appBehaviourKey: '5CHFipOVS715Gu3cR2JtJFPrMHc35h4k'
+        }
+    </script>
+
+    <script type="text/template" id="component-opinion-scale">
+        <div class="component-choices"></div>
+        <ul class="labels layout-thee-columns layout-columns color-secondary text-subpixel-antialiased">
+            <li class="first text-size-m text-align-left negativeLabel"></li>
+            <li class="second text-size-m text-align-center neutralLabel"></li>
+            <li class="third text-size-m text-align-right positiveLabel"></li>
+        </ul>
+    </script>
+    <script type="text/template" id="component-choice-simple">
+        <input <%=checked%> type="radio" value="<%=value%>"/><br/>
+        <span><%=label%></span>
+    </script>
+    <script type="text/template" id="component-choice-square">
+        <div class="choice-wrapper">
+            <div class="label"><%=label%></div>
+            <div class="line"></div>
+            <div class="aux">
+                <div class="bg"></div>
+                <div class="bd"></div>
+            </div>
+            <div class="background"></div>
+        </div>
+    </script>
+    <script type="text/template" id="icon-cloud">
+        <svg class="icon-cloud" width="132px" height="85px" viewBox="0 0 132 85" version="1.1"
+             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+             xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                <g id="Artboard-3" sketch:type="MSArtboardGroup" fill="#000000">
+                    <path d="M79,85 L108,85 L108,84.9566146 C121.385069,84.1801879 132,73.0797189 132,59.5 C132,46.906961 122.871557,36.445984 110.870729,34.373127 C110.956288,33.426871 111,32.4685402 111,31.5 C111,14.1030304 96.8969696,0 79.5,0 C65.9387999,0 54.3791415,8.56961829 49.9409394,20.5889401 L49.9409394,20.5889401 C47.0317445,16.5954404 42.3189711,14 37,14 C28.163444,14 21,21.163444 21,30 C21,31.4892152 21.2034561,32.9309107 21.5840885,34.2988067 C9.35984257,36.1828033 0,46.7483475 0,59.5 C0,73.4162144 11.1475089,84.7287886 25,85 L59,85 L59,66 L43,66 L69,32 L95,66 L79,66 L79,85 Z"
+                          id="Oval-6" sketch:type="MSShapeGroup"></path>
+                </g>
+            </g>
+        </svg>
+    </script>
+    <script type="text/template" id="icon-file">
+        <svg class="icon-file" version="1.1" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="65px" height="85px" viewBox="0 0 65 85" enable-background="new 0 0 65 85" xml:space="preserve">
+		<g id="Page-1" sketch:type="MSPage">
+			<g id="Artboard-1" transform="translate(97.000000, 0.000000)" sketch:type="MSArtboardGroup">
+				<g id="Rectangle-4-_x2B_-Line-_x2B_-Line" transform="translate(3.000000, 1.000000)" sketch:type="MSLayerGroup">
+					<path id="Rectangle-4" sketch:type="MSShapeGroup" fill="none" stroke="#000000" stroke-width="3" d="M-55.333,1
+						c0.457,0-42,0-42,0v79h61V18C-36.333,18-54.876,1-55.333,1z"/>
+					<path id="Line" sketch:type="MSShapeGroup" fill="none" stroke="#000000" stroke-width="2.837" stroke-linecap="square" d="
+						M-55.833,1.579V18.5"/>
+					<path id="Line_1_" sketch:type="MSShapeGroup" fill="none" stroke="#000000" stroke-width="3" stroke-linecap="square" d="
+						M-55.333,18.5h19"/>
+				</g>
+			</g>
+		</g>
+	</svg>
+    </script>
+    <script type="text/template" id="component-file-upload-box">
+        <div class="box">
+            <div class="box-cancel">
+                <svg viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" x="0px" y="0px" width="14px" height="14px">
+				<g>
+					<path id="Line" d="M 11.5 1.5 L 1.5 11.5 " stroke="#000000" stroke-width="2" fill="none"/>
+					<path id="Line2" d="M 1.5 1.5 L 11.5 11.5 " stroke="#000000" stroke-width="2" fill="none"/>
+				</g>
+			</svg>
+                <div class="cancel-background"></div>
+            </div>
+            <span class="tick"></span>
+            <input type="file" name="file"/>
+            <div class="box-content-wrapper">
+                <div class="box-content">
+                    <div class="box-image"></div>
+                    <div class="box-text"></div>
+                </div>
+            </div>
+            <div class="aux">
+                <div class="bg"></div>
+                <div class="bd"></div>
+            </div>
+            <div class="background"></div>
+        </div>
+    </script>
+    <script type="text/template" id="component-file-upload-box-simple">
+        <input type="file" name="file"/>
+        <p class="box-text"></p>
+        <div class="progress-bar-target"></div>
+    </script>
+    <script type="text/template" id="component-file-upload-progress-bar">
+        <div class="progress-bar">
+            <div class="bar"></div>
+        </div>
+    </script>
+    <script type="text/template" id="component-file-upload-text-start">
+        <p>
+            <%= textChoose %>
+        </p>
+        <p>
+            <%= textSizeLimit %>: <%= maxFileSize %> MB
+        </p>
+    </script>
+    <script type="text/template" id="component-file-upload-text-uploading">
+        <p>
+            <b><%= textUploading %></b>
+        </p>
+        <p>
+            <%= fileName %>
+        </p>
+    </script>
+    <script type="text/template" id="component-file-upload-text-preview">
+        <p>
+            <b><%= fileName %></b>
+        </p>
+    </script>
+    <script type="text/template" id="component-confirm-button">
+        <div class="button-wrapper confirm">
+        </div>
+        <div class="text"></div>
+    </script>
+    <script type="text/javascript">
+        var serializedForm = {
+            "id": 34510,
+            "fields": [{
+                "id": "2338228",
+                "question": "Is the project your own or are you acting on behalf of a customer of yours?",
+                "label": "Is the project your own or are you acting on behalf of a customer of yours?",
+                "type": "list",
+                "required": false,
+                "attachment_type": "",
+                "position": 0,
+                "calculations": [],
+                "randomize": false,
+                "multiple": false,
+                "other": false,
+                "choices": {
+                    "3319456": {"id": "3319456", "label": "It's our own project", "position": 0},
+                    "3319457": {"id": "3319457", "label": "It's a project for a third party", "position": 1}
+                },
+                "vertical": true
+            }, {
+                "id": "2338141",
+                "question": "What's the name of your company?",
+                "label": "What's the name of your company?",
+                "type": "textfield",
+                "required": false,
+                "attachment_type": "",
+                "position": 1,
+                "calculations": [],
+                "unique": false
+            }, {
+                "id": "235719",
+                "question": "Do you have a website?",
+                "label": "Do you have a website?",
+                "type": "website",
+                "required": false,
+                "attachment_type": "",
+                "position": 2,
+                "calculations": [],
+                "unique": false
+            }, {
+                "id": "235693",
+                "question": "What is the scope of work required?",
+                "label": "What is the scope of work required?",
+                "type": "list",
+                "required": false,
+                "attachment_type": "",
+                "position": 3,
+                "calculations": [],
+                "randomize": false,
+                "multiple": true,
+                "other": false,
+                "choices": {
+                    "314815": {"id": "314815", "label": "Python\/Django application", "position": 0},
+                    "82921309": {"id": "82921309", "label": "React\/JavaScript application", "position": 1},
+                    "82921310": {"id": "82921310", "label": "React Native\/mobile application", "position": 2},
+                    "3319417": {"id": "3319417", "label": "Information architecture", "position": 3},
+                    "314816": {"id": "314816", "label": "Front-end + UX development", "position": 4},
+                    "3319418": {"id": "3319418", "label": "Graphical design", "position": 5},
+                    "3319419": {"id": "3319419", "label": "Illustration work", "position": 6}
+                },
+                "vertical": true
+            }, {
+                "id": "2338186",
+                "question": "Please provide a short description of your project",
+                "label": "Please provide a short description of your project",
+                "type": "textarea",
+                "required": false,
+                "attachment_type": "",
+                "position": 4,
+                "calculations": []
+            }, {
+                "id": "2338252",
+                "question": "Does the project contain any existing code or prior work you'd like us to continue with?",
+                "label": "Does the project contain any existing code or prior work you'd like us to continue with?",
+                "type": "list",
+                "required": false,
+                "attachment_type": "",
+                "position": 5,
+                "calculations": [],
+                "randomize": false,
+                "multiple": false,
+                "other": false,
+                "choices": {
+                    "3319493": {"id": "3319493", "label": "No, we want to start from scratch", "position": 0},
+                    "3319494": {
+                        "id": "3319494",
+                        "label": "Yes but we're considering a restart, we'd like you to advise",
+                        "position": 1
+                    },
+                    "3319495": {
+                        "id": "3319495",
+                        "label": "Yes, we need you to work with an existing project",
+                        "position": 2
+                    }
+                },
+                "vertical": true
+            }, {
+                "id": "2338276",
+                "question": "Please provide a time frame or deadline for the project",
+                "label": "Please provide a time frame or deadline for the project",
+                "type": "textarea",
+                "required": false,
+                "attachment_type": "",
+                "position": 6,
+                "calculations": []
+            }, {
+                "id": "2338291",
+                "question": "Please provide an e-mail address and\/or a phone number we can contact with a follow-up",
+                "label": "Please provide an e-mail address and\/or a phone number we can contact with a follow-up",
+                "type": "email",
+                "required": true,
+                "attachment_type": "",
+                "position": 7,
+                "calculations": [],
+                "unique": false
+            }],
+            "outros": [{
+                "id": 18916,
+                "uid": "18916",
+                "attachment": "",
+                "body": "Thank You!<br \/>Merci!<br \/>Hartelijk dank!<br \/>Vielen Dank!<br \/>\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3059\u3044\u307e\u3059<br \/>\u00a1Muchos gracias!<br \/>Dzi\u0119kujemy!<br \/>\u0421\u043f\u0430\u0441\u0438\u0431\u043e!<br \/>D\u011bkuji moc!",
+                "bodyEnabled": true,
+                "button": "back to mirumee.com",
+                "buttonEnabled": true,
+                "buttonReload": false,
+                "buttonRedirection": "http:\/\/mirumee.com\/",
+                "shareIcons": false,
+                "position": 0
+            }],
+            "intros": [{
+                "id": 22441,
+                "uid": "22441",
+                "image": {"id": 16356541},
+                "attachment_type": "image",
+                "body": "We are\u00a0<strong>Mirumee<\/strong>.<br \/>We build\u00a0<strong>high performance,\u00a0maintainable <\/strong>and<strong> business critical<\/strong>\u00a0web applications and e-commerce\u00a0for the companies around the world.<br \/><br \/>We pick quality over quantity. We \u2764\ufe0f\u00a0<strong>Python, Django, JavaScript, React<\/strong> and<strong> designing engaging user experiences and front-ends<\/strong>.<br \/><br \/>",
+                "body_enabled": true,
+                "button": "start",
+                "button_enabled": true,
+                "description": "And we would love to know more about your project!",
+                "description_enabled": true,
+                "enabled": true
+            }],
+            "uid": "gf97sQ",
+            "name": "Project initiation form",
+            "design": {"id": 38502}
+        };
+    </script>
+
+
+    <link rel="stylesheet" type="text/css" href="https://assets.typeform.com/forms/styles/38502?v=2887674">
+    <link id="font" href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&text=' rel='stylesheet'
+          type='text/css'>
+</head>
+<body class="preload   default  repeat proportion  ">
+
+
+<div id="typeform" class="">
+    <div class="form">
+        <ul class="questions">
+
+
+            <li class="list active    vertical" id="2338228"
+                data-model='{"id":"2338228","type":"list","name":"","required":false,"showPadlockIcon":false}'>
+                <div class="wrapper">
+                    <div class="item">
+                        <span></span>
+                        <div class="arrow">
+                            <div class="arrow-right"></div>
+                        </div>
+                    </div>
+                    <div class="question"><span>Is the project your own or are you acting on behalf of a customer of yours?</span>
+                    </div>
+                    <div class="content">
+                        <div class="content-wrapper">
+
+                            <div class="attachment-wrapper">
+
+                                <div class="control">
+                                    <div class="multiple">Choose as many as you like</div>
+                                    <ul class="columns">
+
+                                        <li id="3319456" class="container">
+                                            <input type="hidden" name="value" value="It&#039;s our own project"/>
+                                            <div class="letter"><span>A</span></div>
+                                            <span class="label">It&#039;s our own project</span>
+                                            <span class="tick"></span>
+                                            <div class="aux ">
+                                                <div class="bg"></div>
+                                                <div class="bd"></div>
+                                            </div>
+                                        </li>
+
+                                        <li id="3319457" class="container">
+                                            <input type="hidden" name="value"
+                                                   value="It&#039;s a project for a third party"/>
+                                            <div class="letter"><span>B</span></div>
+                                            <span class="label">It&#039;s a project for a third party</span>
+                                            <span class="tick"></span>
+                                            <div class="aux ">
+                                                <div class="bg"></div>
+                                                <div class="bd"></div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="message "><span></span>
+                                <div></div>
+                            </div>
+                            <div class="confirm container">
+
+
+                                <div class="button-wrapper confirm">
+                                    <div class="button nav enabled"><span>OK</span><span class="confirm"></span></div>
+                                </div>
+                                <div class="text">press <strong>ENTER</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+
+            <li class="textfield active   " id="2338141"
+                data-model='{"id":"2338141","type":"textfield","name":"","required":false,"showPadlockIcon":false}'>
+                <div class="wrapper">
+                    <div class="item">
+                        <span></span>
+                        <div class="arrow">
+                            <div class="arrow-right"></div>
+                        </div>
+                    </div>
+                    <div class="question"><span>What's the name of your company?</span></div>
+                    <div class="content">
+                        <div class="content-wrapper">
+                            <div class="attachment-wrapper">
+                                <div class="control">
+                                    <div class="input">
+                                        <input class="" type="text"/>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="message "><span></span>
+                                <div></div>
+                            </div>
+                            <div class="confirm container">
+
+
+                                <div class="button-wrapper confirm">
+                                    <div class="button nav enabled"><span>OK</span><span class="confirm"></span></div>
+                                </div>
+                                <div class="text">press <strong>ENTER</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+
+            <li class="website active   " id="235719"
+                data-model='{"id":"235719","type":"website","name":"","required":false,"showPadlockIcon":false}'>
+                <div class="wrapper">
+                    <div class="item">
+                        <span></span>
+                        <div class="arrow">
+                            <div class="arrow-right"></div>
+                        </div>
+                    </div>
+                    <div class="question"><span>Do you have a website?</span></div>
+                    <div class="content">
+                        <div class="content-wrapper">
+                            <div class="input">
+                                <input type="text" class="" type="text"/>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="message "><span></span>
+                                <div></div>
+                            </div>
+                            <div class="confirm container">
+
+
+                                <div class="button-wrapper confirm">
+                                    <div class="button nav enabled"><span>OK</span><span class="confirm"></span></div>
+                                </div>
+                                <div class="text">press <strong>ENTER</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+
+            <li class="list active    multiple vertical" id="235693"
+                data-model='{"id":"235693","type":"list","name":"","required":false,"showPadlockIcon":false}'>
+                <div class="wrapper">
+                    <div class="item">
+                        <span></span>
+                        <div class="arrow">
+                            <div class="arrow-right"></div>
+                        </div>
+                    </div>
+                    <div class="question"><span>What is the scope of work required?</span></div>
+                    <div class="content">
+                        <div class="description">
+                            Beware. We don't accept Magento projects ;)
+                        </div>
+                        <div class="content-wrapper">
+
+                            <div class="attachment-wrapper">
+
+                                <div class="control">
+                                    <div class="multiple">Choose as many as you like</div>
+                                    <ul class="columns">
+
+                                        <li id="314815" class="container">
+                                            <input type="hidden" name="value" value="Python/Django application"/>
+                                            <div class="letter"><span>A</span></div>
+                                            <span class="label">Python/Django application</span>
+                                            <span class="tick"></span>
+                                            <div class="aux ">
+                                                <div class="bg"></div>
+                                                <div class="bd"></div>
+                                            </div>
+                                        </li>
+
+                                        <li id="82921309" class="container">
+                                            <input type="hidden" name="value" value="React/JavaScript application"/>
+                                            <div class="letter"><span>B</span></div>
+                                            <span class="label">React/JavaScript application</span>
+                                            <span class="tick"></span>
+                                            <div class="aux ">
+                                                <div class="bg"></div>
+                                                <div class="bd"></div>
+                                            </div>
+                                        </li>
+
+                                        <li id="82921310" class="container">
+                                            <input type="hidden" name="value" value="React Native/mobile application"/>
+                                            <div class="letter"><span>C</span></div>
+                                            <span class="label">React Native/mobile application</span>
+                                            <span class="tick"></span>
+                                            <div class="aux ">
+                                                <div class="bg"></div>
+                                                <div class="bd"></div>
+                                            </div>
+                                        </li>
+
+                                        <li id="3319417" class="container">
+                                            <input type="hidden" name="value" value="Information architecture"/>
+                                            <div class="letter"><span>D</span></div>
+                                            <span class="label">Information architecture</span>
+                                            <span class="tick"></span>
+                                            <div class="aux ">
+                                                <div class="bg"></div>
+                                                <div class="bd"></div>
+                                            </div>
+                                        </li>
+
+                                        <li id="314816" class="container">
+                                            <input type="hidden" name="value" value="Front-end + UX development"/>
+                                            <div class="letter"><span>E</span></div>
+                                            <span class="label">Front-end + UX development</span>
+                                            <span class="tick"></span>
+                                            <div class="aux ">
+                                                <div class="bg"></div>
+                                                <div class="bd"></div>
+                                            </div>
+                                        </li>
+
+                                        <li id="3319418" class="container">
+                                            <input type="hidden" name="value" value="Graphical design"/>
+                                            <div class="letter"><span>F</span></div>
+                                            <span class="label">Graphical design</span>
+                                            <span class="tick"></span>
+                                            <div class="aux ">
+                                                <div class="bg"></div>
+                                                <div class="bd"></div>
+                                            </div>
+                                        </li>
+
+                                        <li id="3319419" class="container">
+                                            <input type="hidden" name="value" value="Illustration work"/>
+                                            <div class="letter"><span>G</span></div>
+                                            <span class="label">Illustration work</span>
+                                            <span class="tick"></span>
+                                            <div class="aux ">
+                                                <div class="bg"></div>
+                                                <div class="bd"></div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="message "><span></span>
+                                <div></div>
+                            </div>
+                            <div class="confirm container">
+
+
+                                <div class="button-wrapper confirm">
+                                    <div class="button nav enabled"><span>OK</span><span class="confirm"></span></div>
+                                </div>
+                                <div class="text">press <strong>ENTER</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+
+            <li class="textarea active   " id="2338186"
+                data-model='{"id":"2338186","type":"textarea","name":"","required":false,"showPadlockIcon":false}'>
+                <div class="wrapper">
+                    <div class="item">
+                        <span></span>
+                        <div class="arrow">
+                            <div class="arrow-right"></div>
+                        </div>
+                    </div>
+                    <div class="question"><span>Please provide a short description of your project</span></div>
+                    <div class="content">
+                        <div class="content-wrapper">
+                            <div class="attachment-wrapper">
+                                <div class="control">
+                                    <div class="textarea-wrapper">
+                                        <textarea class="" maxlength=""></textarea>
+                                        <span class="txtarea-tip"><strong>SHIFT</strong> + <strong>ENTER</strong> to make a line break</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="message "><span></span>
+                                <div></div>
+                            </div>
+                            <div class="confirm container">
+
+
+                                <div class="button-wrapper confirm">
+                                    <div class="button nav enabled"><span>OK</span><span class="confirm"></span></div>
+                                </div>
+                                <div class="text">press <strong>ENTER</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+
+            <li class="list active    vertical" id="2338252"
+                data-model='{"id":"2338252","type":"list","name":"","required":false,"showPadlockIcon":false}'>
+                <div class="wrapper">
+                    <div class="item">
+                        <span></span>
+                        <div class="arrow">
+                            <div class="arrow-right"></div>
+                        </div>
+                    </div>
+                    <div class="question"><span>Does the project contain any existing code or prior work you'd like us to continue with?</span>
+                    </div>
+                    <div class="content">
+                        <div class="content-wrapper">
+
+                            <div class="attachment-wrapper">
+
+                                <div class="control">
+                                    <div class="multiple">Choose as many as you like</div>
+                                    <ul class="columns">
+
+                                        <li id="3319493" class="container">
+                                            <input type="hidden" name="value"
+                                                   value="No, we want to start from scratch"/>
+                                            <div class="letter"><span>A</span></div>
+                                            <span class="label">No, we want to start from scratch</span>
+                                            <span class="tick"></span>
+                                            <div class="aux ">
+                                                <div class="bg"></div>
+                                                <div class="bd"></div>
+                                            </div>
+                                        </li>
+
+                                        <li id="3319494" class="container">
+                                            <input type="hidden" name="value"
+                                                   value="Yes but we&#039;re considering a restart, we&#039;d like you to advise"/>
+                                            <div class="letter"><span>B</span></div>
+                                            <span class="label">Yes but we&#039;re considering a restart, we&#039;d like you to advise</span>
+                                            <span class="tick"></span>
+                                            <div class="aux ">
+                                                <div class="bg"></div>
+                                                <div class="bd"></div>
+                                            </div>
+                                        </li>
+
+                                        <li id="3319495" class="container">
+                                            <input type="hidden" name="value"
+                                                   value="Yes, we need you to work with an existing project"/>
+                                            <div class="letter"><span>C</span></div>
+                                            <span class="label">Yes, we need you to work with an existing project</span>
+                                            <span class="tick"></span>
+                                            <div class="aux ">
+                                                <div class="bg"></div>
+                                                <div class="bd"></div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="message "><span></span>
+                                <div></div>
+                            </div>
+                            <div class="confirm container">
+
+
+                                <div class="button-wrapper confirm">
+                                    <div class="button nav enabled"><span>OK</span><span class="confirm"></span></div>
+                                </div>
+                                <div class="text">press <strong>ENTER</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+
+            <li class="textarea active   " id="2338276"
+                data-model='{"id":"2338276","type":"textarea","name":"","required":false,"showPadlockIcon":false}'>
+                <div class="wrapper">
+                    <div class="item">
+                        <span></span>
+                        <div class="arrow">
+                            <div class="arrow-right"></div>
+                        </div>
+                    </div>
+                    <div class="question"><span>Please provide a time frame or deadline for the project</span></div>
+                    <div class="content">
+                        <div class="content-wrapper">
+                            <div class="attachment-wrapper">
+                                <div class="control">
+                                    <div class="textarea-wrapper">
+                                        <textarea class="" maxlength=""></textarea>
+                                        <span class="txtarea-tip"><strong>SHIFT</strong> + <strong>ENTER</strong> to make a line break</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="message "><span></span>
+                                <div></div>
+                            </div>
+                            <div class="confirm container">
+
+
+                                <div class="button-wrapper confirm">
+                                    <div class="button nav enabled"><span>OK</span><span class="confirm"></span></div>
+                                </div>
+                                <div class="text">press <strong>ENTER</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+
+            <li class="email active required  " id="2338291"
+                data-model='{"id":"2338291","type":"email","name":"","required":true,"showPadlockIcon":false}'>
+                <div class="wrapper">
+                    <div class="item">
+                        <span></span>
+                        <div class="arrow">
+                            <div class="arrow-right"></div>
+                        </div>
+                    </div>
+                    <div class="question"><span>Please provide an e-mail address and/or a phone number we can contact with a follow-up</span>
+                    </div>
+                    <div class="content">
+                        <div class="content-wrapper">
+                            <div class="attachment-wrapper">
+                                <div class="control">
+                                    <div class="input">
+                                        <input type="text" class="" type="text"/>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="message "><span></span>
+                                <div></div>
+                            </div>
+                            <div class="confirm container">
+
+
+                                <div class="button-wrapper confirm">
+                                    <div class="button nav enabled"><span>OK</span><span class="confirm"></span></div>
+                                </div>
+                                <div class="text">press <strong>ENTER</strong></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="footer-confirm">
+            <div class="persistent background"></div>
+            <div class="wrapper">
+                <div class="content">
+
+
+                    <div class="button-wrapper confirm">
+                        <div class="button nav enabled hover-effect"><span>OK</span><span class="confirm"></span></div>
+                    </div>
+                    <div class="text">
+                        <span class="default">press <strong>ENTER</strong></span>
+                        <span class="textarea">press <strong>ENTER</strong></span>
+                        <span class="multiple">press <strong>ENTER</strong></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="fixed-footer" class="lightness-step">
+            <div class="overlay"></div>
+            <div class="persistent background"></div>
+            <div class="nav-buttons">
+
+
+                <div class="button-wrapper up">
+                    <div class="button nav enabled hover-effect"><span></span><span class="up"></span></div>
+                </div>
+
+
+                <div class="button-wrapper down">
+                    <div class="button nav enabled hover-effect"><span></span><span class="down"></span></div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="content">
+                <div id="progress"></div>
+            </div>
+
+
+        </div>
+        <div id="unfixed-footer" class="lightness-step">
+            <div class="footer-message">
+                <div class="background"></div>
+                <div class="content"><span class="default-message"></span></div>
+            </div>
+            <div class="persistent background lightness-step"></div>
+            <div class="content">
+                <div class="button-wrapper submit">
+                    <div class="button-text">press <strong>ENTER</strong></div>
+                </div>
+
+                <div class="button-wrapper review">
+                    <div class="button general red enabled hover-effect">Review</div>
+                    <div class="button-text">press <strong>ENTER</strong></div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <div id="18916" class="outro screen " data-field="true">
+        <div class="content-wrapper">
+            <div class="content">
+
+                <div class="media">
+
+
+                </div>
+
+
+                <div class="text">
+                    Thank You!<br>Merci!<br>Hartelijk dank!<br>Vielen Dank!<br>ありがとうございますいます<br>¡Muchos gracias!<br>Dziękujemy!<br>Спасибо!<br>Děkuji
+                    moc!
+
+                </div>
+
+
+                <div class="social  ">
+                    <a href="http://www.facebook.com/sharer.php?u=https://mirumee.typeform.com/to/gf97sQ&t=Check%20this%20out%21"
+                       target="_blank">
+                        <img class="icon-facebook" src="//dkl3g0z0k6qzr.cloudfront.net/quickyformapp/images/lazy.png"
+                             width="32" height="32"/>
+                    </a>
+                    <a href="https://twitter.com/share?url=https://mirumee.typeform.com/to/gf97sQ&text=Check%20this%20out%21"
+                       target="_blank">
+                        <img class="icon-twitter" src="//dkl3g0z0k6qzr.cloudfront.net/quickyformapp/images/lazy.png"
+                             width="32" height="32"/>
+                    </a>
+                    <a href="http://www.linkedin.com/shareArticle?mini=true&ro=false&trk=bookmarklet&title=Check%20this%20out%21&url=https://mirumee.typeform.com/to/gf97sQ"
+                       target="_blank">
+                        <img class="icon-linkedin" src="//dkl3g0z0k6qzr.cloudfront.net/quickyformapp/images/lazy.png"
+                             width="32" height="32"/>
+                    </a>
+                    <a href="https://plus.google.com/share?url=https://mirumee.typeform.com/to/gf97sQ" target="_blank">
+                        <img class="icon-googleplus" src="//dkl3g0z0k6qzr.cloudfront.net/quickyformapp/images/lazy.png"
+                             width="32" height="32"/>
+                    </a>
+                    <a href="http://bufferapp.com/add?text=Check this out!&url=https://mirumee.typeform.com/to/gf97sQ"
+                       target="_blank">
+                        <img class="icon-buffer" src="//dkl3g0z0k6qzr.cloudfront.net/quickyformapp/images/lazy.png"
+                             width="32" height="32"/>
+                    </a>
+                </div>
+
+
+                <input id="redirect-button-url" class="redirect" type="hidden" value="http://mirumee.com/">
+                <div class="button-wrapper">
+                    <a class="button general full enabled" target="_parent">back to mirumee.com</a>
+                    <div class="button-text">press <strong>ENTER</strong></div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="footer">
+            <div class="persistent-wrapper">
+                <div class="persistent background"></div>
+                <div class="persistent"></div>
+            </div>
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="button-wrapper">
+                    <a class="button general full enabled hover-effect js-outro-button" target="_parent" style="">back
+                        to mirumee.com</a>
+                    <div class="button-text">press <strong>ENTER</strong></div>
+                </div>
+            </div>
+            <div class="scroll-smooth"></div>
+        </div>
+    </div>
+
+    <div id="0" class="outro default screen " data-field="true">
+        <div class="content-wrapper">
+            <div class="content">
+
+
+                <div class="media">
+                </div>
+
+
+                <div class="text">
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="footer">
+            <div class="persistent-wrapper">
+                <div class="persistent background"></div>
+                <div class="persistent"></div>
+            </div>
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="button-wrapper">
+                </div>
+            </div>
+            <div class="scroll-smooth"></div>
+        </div>
+    </div>
+    <div id="background">
+        <div></div>
+    </div>
+</div>
+
+
+<ul id="texts" style="display:none;">
+    <li id="keyboard">keyboard</li>
+    <li id="key">Key</li>
+    <li id="tab-button">OK</li>
+    <li id="continue-button">Continue</li>
+    <li id="button-tip-default">press <strong>ENTER</strong></li>
+    <li id="button-tip-textarea">press <strong>ENTER</strong></li>
+    <li id="review-button">Review</li>
+    <li id="next-validation">Next validation</li>
+    <li id="submit-button">Submit</li>
+    <li id="phishing-notice">Never submit passwords!</li>
+    <li id="report-phishing">Report abuse</li>
+    <li id="report-phishing-link">https://www.typeform.com/help/report-abuse/</li>
+    <li id="multiple">Choose as many as you like</li>
+    <li id="other">Other</li>
+    <li id="resizing">resizing</li>
+    <li id="private">This typeform is in private mode. Please don't share this URL.</li>
+    <li id="private-embed">This typeform is in private mode.</li>
+    <li id="trial-private">This typeform is in private mode and can only be accessed by you</li>
+    <li id="preview">preview</li>
+    <li id="end">end</li>
+    <li id="incomplete">Some required answers are blank</li>
+    <li id="default-text">Answer goes here...</li>
+    <li id="share">Check this out!</li>
+    <li id="y">Y</li>
+    <li id="yes">Yes</li>
+    <li id="n">N</li>
+    <li id="no">No</li>
+    <li id="success">Done! Your information was sent perfectly.</li>
+    <li id="image-placeholder-1">Upload your logo or an image / video</li>
+    <li id="image-placeholder-2">We’ll take care of the rest!</li>
+    <li id="placeholder-description">Description text goes here...</li>
+    <li id="progress-proportion">{{ step }} of {{ total }} answered</li>
+    <li id="progress-percent">{{ percent }}% completed</li>
+    <li id="meta-description"></li>
+    <li id="advert-footer">Powered by <b>Typeform</b></li>
+    <li id="advert-footer-core">Create your own <b>typeform</b>...</li>
+    <li id="advert-thankyou">Powered by <a href="https://www.typeform.com/?{{ QUERY }}" target="_blank">Typeform</a>
+    </li>
+    <li id="legalyes">I accept</li>
+    <li id="legalno">I don’t accept</li>
+    <li id="type-select">Type or select an option</li>
+    <li id="type-select-touch">Select an option</li>
+    <li id="not-found">No suggestions found</li>
+    <li id="banner-text">How you ask is everything</li>
+    <li id="banner-link">Create a <b>typeform</b></li>
+    <li id="banner-link-core">Create your own <b>typeform</b> free</li>
+    <li id="payment_description_price">Your credit card will be charged: <%=price%></li>
+    <li id="payment_description_advice">We never store your card number or CVC number</li>
+    <li id="payment_description_stripe"><span>Secured by</span> <%=logo%></li>
+    <li id="credit_card_number">Please enter your credit or debit card number:</li>
+    <li id="cvc_number">The CVC number:</li>
+    <li id="cvc_description">(3 or 4 digit security number on the back of your card)</li>
+    <li id="credit_card_name">The name on your card:</li>
+    <li id="expiry_month">Your card's expiry month:</li>
+    <li id="expiry_year">Your card's expiry year:</li>
+    <li id="expiry_date">The month and year your card expires:</li>
+    <li id="credit_card_number_error">credit_card_number_error</li>
+    <li id="credit_card_cvc_error">credit_card_cvc_error</li>
+    <li id="file-upload-choose"><b>Choose file</b></li>
+    <li id="file-upload-drag">or <b>drag here</b></li>
+    <li id="file-upload-uploading">Uploading...</li>
+    <li id="file-upload-sizeLimit">Your file is too big</li>
+    <li id="file-upload-maxSize">Size limit</li>
+    <li id="file-upload-processing">Your file is still uploading, please wait...</li>
+    <li id="file-upload-upload-error">An error occurred while uploading the file</li>
+    <li id="file-upload-must-upload"><strong>Oops!</strong> Please upload a file</li>
+    <li id="textarea-newline-tip"><strong>SHIFT</strong> + <strong>ENTER</strong> to make a line break</li>
+    <li id="ranking-field-tip">Drag and drop the choices...</li>
+    <li id="shortcut">shortcut</li>
+    <li id="legalquestion">legalquestion</li>
+    <li id="yesnoanswer">yesnoanswer</li>
+    <li id="proportional">proportional</li>
+    <li id="correct">Please correct the errors listed below</li>
+    <li id="required">Please fill this in</li>
+    <li id="duplicated"><strong>Hmm...</strong>looks like this value has already been entered by someone else</li>
+    <li id="invalid"><strong>Careful!</strong> That value isn't valid!</li>
+    <li id="invalid-date">Hmm…that date doesn't look valid</li>
+    <li id="must-select"><strong>Oops!</strong> Please make a selection</li>
+    <li id="must-enter"><strong>Oops!</strong> You need to enter a value</li>
+    <li id="maxlength">Type no more than {{ MAXLENGTH }} characters</li>
+    <li id="terms">You must agree to the terms &amp; conditions</li>
+    <li id="email">Hmm…that email doesn't look valid</li>
+    <li id="website">Hmm…that web address doesn't exist</li>
+    <li id="minmax">Please enter a number between {{ MIN }} and {{ MAX }}</li>
+    <li id="min">Please enter a number greater than {{ MIN }}</li>
+    <li id="max">Please enter a number lower than {{ MAX }}</li>
+    <li id="review">{{ NUM }} answer(s) need completing</li>
+    <li id="connection">Oh no, you can’t connect to the server right now</li>
+    <li id="server">Server error! Your request wasn't completed.</li>
+    <li id="slow-submission-on-submit">It's taking longer than usual to send your response. Please leave this page open
+        and we'll keep trying.
+    </li>
+    <li id="retrying-in-time-submission">Retrying in {{ NEXT_TRY }}s</li>
+    <li id="retrying-submission">Retrying...</li>
+    <li id="retry-now">retry-now</li>
+    <li id="form-down">The typeform {{ NAME }}, is currently unavailable. Please try again in a few moments.</li>
+    <li id="form-empty">There isn't any content yet</li>
+    <li id="fallback-alert">You're viewing this typeform in "simple" mode.<br/>This is because your device is not yet
+        supported by Typeform.
+    </li>
+    <li id="warning-close-when-submitting">We're still sending your response. If you navigate away from this page, your
+        response might not go through.
+    </li>
+    <li id="and">&</li>
+    <li id="pay">pay {{ amount }}</li>
+    <li id="fallback-warning-payment-unsupported">Sorry, your browser doesn’t support payments</li>
+    <li id="fallback-warning-payment-required">Hey! A payment field in this typeform can’t load in your browser. To pay
+        and submit your responses, please view this typeform in <a href="https://browsehappy.com" target="_blank">one of
+            these browsers</a>.
+    </li>
+    <li id="fallback-warning-payment-not-required">Hey! A payment field in this typeform can’t load in your browser. To
+        pay, please view this typeform in <a href="https://browsehappy.com" target="_blank">one of these browsers</a>—or
+        submit without paying.
+    </li>
+    <li id="incorrect_number">The card number is incorrect.</li>
+    <li id="incorrect_cvc">The card's security code is incorrect.</li>
+    <li id="incomplete_number">Your card number is incomplete</li>
+    <li id="incomplete_expiry">Your card's expiration date is incomplete</li>
+    <li id="incomplete_cvc">Your card's security code is incomplete</li>
+    <li id="invalid_number">The card number is not a valid credit card number.</li>
+    <li id="invalid_cvc">The card's security code is invalid.</li>
+    <li id="invalid_expiry_month">The card's expiration month is invalid.</li>
+    <li id="invalid_expiry_month_past">Your card's expiration date is in the past</li>
+    <li id="invalid_expiry_year_past">Your card's expiration year is in the past</li>
+    <li id="invalid_expiry_year">The card's expiration year is invalid.</li>
+    <li id="invalid_name">Please enter the name that appears on your card</li>
+    <li id="expired_card">The card has expired.</li>
+    <li id="card_declined">The card was declined.</li>
+    <li id="processing_error">An error occurred while processing the card.</li>
+    <li id="payment_sync">Price calculation is invalid, please try again</li>
+    <li id="generic-error">Oops, something went wrong!</li>
+</ul>
+
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/spin.js/2.0.1/spin.min.js"></script>
+
+<script type="text/javascript">
+    var opts = {
+        lines: 16, // The number of lines to draw
+        length: 3, // The length of each line
+        width: 3, // The line thickness
+        radius: 14, // The radius of the inner circle
+        color: '#083858', // #rgb or #rrggbb
+        speed: 2.1, // Rounds per second
+        trail: 60, // Afterglow percentage
+        shadow: false, // Whether to render a shadow
+        hwaccel: false // Whether to use hardware acceleration
+    };
+    var target = document.getElementById('spin');
+    var spinner = new Spinner(opts).spin(target);
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/bundles/quickyformapp/js/lib/jquery.2_0_0.min.js">\x3C/script>')</script>
+
+
+<script type="text/javascript" src="/static/js/attributionUtil.js"></script>
+<script type="text/javascript" src="/static/js//trackingClient.js"></script>
+
+<!-- common scripts -->
+
+
+<script type="text/javascript"
+        src="https://d4z6dx8qrln4r.cloudfront.net/common-ac26b3cbe1fc73cc3e5f8f677a0be438-min.z.js"></script>
+
+
+<!-- end of common scripts -->
+
+
+<script type="text/javascript">
+    var jumps = [];
+    freezeframe_options = {
+        animation_icon_image: false,
+        loading_background_image: false,
+        loading_background_color: "transparent",
+        loading_background_position: "top left",
+        trigger_event: "focus",
+        loading_fade_in_speed: 1,
+        auto_run: false
+    }
+</script>
+
+
+<script type="text/javascript"
+        src="https://d4z6dx8qrln4r.cloudfront.net/default-2cd5bf9815ab0e1531e1c9858a245f0d-min.z.js"></script>
+
+
+<script type="text/javascript">
+
+
+    var formHasGA = true;
+
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-10159761-18', 'none');
+    ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript">window.NREUM || (NREUM = {});
+NREUM.info = {
+    "beacon": "bam.nr-data.net",
+    "licenseKey": "aa6e0ec721",
+    "applicationID": "9223656",
+    "transactionName": "NVEDZkUEXEQEBkANWQwbIFFDDF1ZSjpSC0QP",
+    "queueTime": 0,
+    "applicationTime": 202,
+    "atts": "GRYAEA0eT0o=",
+    "errorBeacon": "bam.nr-data.net",
+    "agent": ""
+}</script>
+</body>
+</html>

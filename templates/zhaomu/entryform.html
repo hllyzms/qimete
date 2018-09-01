@@ -1,0 +1,179 @@
+<!doctype html>
+{% load staticfiles %}
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>我要报名</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <link rel="stylesheet" href="{% static 'css/zhaomu/reset.css' %}">
+    <style>
+        body {
+            font-size: 0.125rem;
+        }
+
+        .title {
+            width: 100%;
+        }
+
+        .sub {
+            background-color: #d93941;
+            width: 50%;
+            margin: 0.1rem auto;
+            text-align: center;
+            line-height: 0.5rem;
+            color: #fff;
+            border-radius: 11px;
+            font-size: 0.18rem;
+        }
+
+        span {
+            color: #aaa;
+        }
+
+        .b1 {
+            display: flex;
+            width: 79%;
+            margin: 0.2rem auto;
+            line-height: 2em;
+            /* justify-content: space-between; */
+        }
+
+        .b1 input {
+            width: 2.4rem;
+            border: 1px solid #aaa;
+            margin-left: 0.05rem;
+            padding-left: 0.05rem;
+        }
+
+        select {
+            margin-left: 0.05rem;
+            height: 2.5em;
+            width: 0.75rem;
+            background-color: #fff;
+            float: left;
+        }
+
+        .b2 {
+            justify-content: normal;
+        }
+    </style>
+</head>
+<body>
+    <img class="title" src="{% static 'img/zhaomu/49190948492548460.png' %}" alt="">
+    <form action="#" method="post" id="addregister">
+        <div class="b1">
+            <span>姓名</span>
+            <input type="text" name="name" id="name" value="">
+        </div>
+        <div class="b1 b2">
+            <span>性别</span>
+            <select name="gender" id="gender">
+                <option value="male" selected>男</option>
+                <option value="female">女</option>
+            </select>
+        </div>
+        <div class="b1 b2">
+            <span>出生</span>
+            <input type="date" name="birthday" id="birthday" value="">
+        </div>
+        <div class="b1">
+            <span>村庄</span>
+            <input type="text" name="village" id="village" value="">
+        </div>
+        <div class="b1">
+            <span>电话</span>
+            <input type="number" name="mobile" id="mobile" value="">
+        </div>
+        <div class="b1">
+            <span>微信</span>
+            <input type="text" name="wechat" id="wechat" value="">
+        </div>
+        <div class="sub" onclick="sub()">
+            提交
+        </div>
+    </form>
+</body>
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/zhaomu/distpicker.data.js' %}"></script>
+<script src="{% static 'js/zhaomu/distpicker.js' %}"></script>
+<script>
+    $(document).ready(function(){
+        //准备
+        $.ajaxSetup({
+             data: {csrfmiddlewaretoken: '{{ csrf_token }}' },
+        });
+        //rem
+        function rem() {
+            var html = document.getElementsByTagName('html')[0];
+            var Ww = document.documentElement.clientWidth;
+            var scale = Ww / 360;
+            html.style.fontSize = scale * 100 + "px";
+        }
+         rem();
+        window.onresize = function () {
+            rem();
+        }
+        //formadd
+        $('#formadd').submit(function(){
+                var name = $("#id_name").val();        //获得form中用户输入的name 注意这里的id_name 与你html中的id一致
+                var gender = $("#id_password").val();    //同上
+                var birthday =1
+                var village =1
+                var mobile =1
+                var wechat =1
+                $.ajax({
+                    type:"POST",
+                    data: {name:name,
+                        gender:gender,
+                        birthday:birthday,
+                        village:village,
+                        mobile:mobile,
+                        wechat:wechat},
+                    url: "{% url 'xinmingcar:add_reg' %}", //后台处理函数的url 这里用的是static url 需要与urls.py中的name一致
+                    cache: false,
+                    dataType: "html",
+                    success: function(result, statues, xml){
+                        alert(result);                                         //成功时弹出view传回来的结果
+                    },
+                    error: function(){
+                        alert("false");
+                    }
+                });
+                return false;
+            });
+        });
+        function sub(){
+                var name = $("#name").val();  //获得form中用户输入的name 注意这里的id_name 与你html中的id一致
+                var gender = $("#gender").val();    //同上
+                var birthday = $("#birthday").val();
+                var village = $("#village").val();
+                var mobile = $("#mobile").val();
+                var wechat = $("#wechat").val();
+                $.ajax({
+                    type:"POST",
+                    data: { name:name,
+                            gender:gender,
+                            birthday:birthday,
+                            village:village,
+                            mobile:mobile,
+                            wechat:wechat},
+                    url: "{% url 'xinmingcar:add_reg' %}", //后台处理函数的url 这里用的是static url 需要与urls.py中的name一致
+                    cache: false,
+                    dataType: "html",
+                    success: function(data){
+                        if (data.status=='success'){
+                            alert("提交成功")
+                        }else if (data.status=='fail'){
+                            alert("提交失败")
+                        }
+                    },
+                });
+        }
+
+</script>
+</html>

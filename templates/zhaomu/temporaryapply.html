@@ -1,0 +1,136 @@
+<!doctype html>
+{% load staticfiles %}
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>我要报名</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<link rel="stylesheet" href="{% static 'css/zhaomu/reset.css' %}">
+	<style>
+		body{
+			font-size: 0.18rem;
+			background-color: #f2f4f8;
+		}
+
+		.outer{
+			line-height: 3em
+		}
+
+		.top{
+			background-color: #f86c36;
+			display: flex;
+			justify-content: space-between;
+			color: #fff;
+			vertical-align: middle;
+			font-size: 0.16rem;
+			padding: 0 0.1rem;
+		}
+
+		.top img{
+			height: 1em;
+			vertical-align: middle;
+		}
+
+		.top span:nth-child(2){
+			font-size: 0.2rem;
+		}
+
+		.top span:nth-child(3){
+			width: 2em;
+		}
+
+		.inner{
+			background-color: #fff;
+			font-size: 0.16rem;
+		}
+
+		.inner div{
+			overflow: hidden;
+			width: 80%;
+			margin: 0 auto 0.05rem;
+			border-bottom: 1px solid #eee;
+			padding-bottom: 0.05rem;
+		}
+
+		.inner div:nth-child(3){
+			border-bottom: none;
+			margin-bottom: 0.1rem;
+		}
+
+		.inner input{
+			border: none;
+			font-size: 0.16rem;
+			/* width: 2.3rem; */
+			flex: left;
+			/* margin-left: 0.1rem; */
+			line-height: 2em;
+		}
+
+		.inner span{
+			flex: left;
+			margin-left: 0.1rem;
+		}
+
+		.sub{
+			color: #fff;
+			background-color: #f86c36;
+			width: 60%;
+			margin: 0 auto;
+			margin-top: 0.3rem;
+			border-radius: 0.05rem;
+			text-align: center;
+		}
+
+		.wei{
+			text-align: center;
+			color: #fbd5ac;
+			margin-top: 0.3rem;
+		}
+	</style>
+</head>
+<body>
+	<div class="outer">
+		<div class="top">
+			<span>
+				<img src="{% static 'img/zhaomu/left.png' %}" alt="">
+				返回
+			</span>
+			<span>报名表</span>
+			<span></span>
+		</div>
+		<div class="inner">
+			<div>
+				<span>姓名：</span>
+				<input type="text" placeholder="请输入您的姓名">
+			</div>
+			<div>
+				<span>手机：</span>
+				<input type="text" placeholder="请输入您的手机号">
+			</div>
+			<div>
+				<span>备注：</span>
+				<input type="text" placeholder="填写备注信息">
+			</div>
+		</div>
+		<div class="sub">提交</div>
+		<p class="wei">投诉电话：13801268603</p>
+	</div>
+</body>
+<script>
+	function rem(){
+	  var html=document.getElementsByTagName('html')[0];
+	  var Ww=document.documentElement.clientWidth;
+	  var scale=Ww/360;
+	  html.style.fontSize=scale*100+"px";
+	}
+	rem();
+	window.onresize=function(){
+	  rem();
+	}
+</script>
+</html>

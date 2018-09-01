@@ -1,486 +1,392 @@
-<!doctype html>
-<html class="no-js" lang="en">
-<head>
-  <meta charset="utf-8"/>
-  <meta name="google-site-verification" content="UH3HJEeCS-8mejN-dGzJ8cNYMfGLmedYR7rmwUwPXxM"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
-  <title>How we work | Mirumee</title>
-  
-  <meta name="description" content="Strong communication. Modern Tools. Creative Attitude. Transparency. This is what we care about. Read more about how we work." />
-  <meta property="og:description" content="Strong communication. Modern Tools. Creative Attitude. Transparency. This is what we care about. Read more about how we work." />
+{% extends 'index.html' %}
+{% load staticfiles %}
 
-<meta property="og:title" content="How we work | Mirumee" />
-<meta property="og:type" content="website" />
+{% block title %}如何工作|Qimete{% endblock %}
+{% block meta %}
+    <meta charset="utf-8"/>
+    <meta name="google-site-verification" content="UH3HJEeCS-8mejN-dGzJ8cNYMfGLmedYR7rmwUwPXxM"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <meta name="description"
+          content="Strong communication. Modern Tools. Creative Attitude. Transparency. This is what we care about. Read more about how we work."/>
+    <meta property="og:description"
+          content="Strong communication. Modern Tools. Creative Attitude. Transparency. This is what we care about. Read more about how we work."/>
+    <meta property="og:title" content="How we work | Mirumee"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="https://qimete.com/static/img/og-how-we-work.jpg"/>
+    <meta property="og:url" content="https://mirumee.com/how-we-work/"/>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@mirumeelabs"/>
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+{% endblock %}
+{% block link %}
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/manifest.json">
+    <link href="{% static 'css/app.8b0581e2f0c3e46c5606.css' %}" rel="stylesheet">
+{% endblock %}
+{% block script %}
+    <script type="application/ld+json">
+        [
+          {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "url": "https://mirumee.com",
+            "name": "Mirumee Software",
+            "description": "Mirumee is a software house specializing in high performance Python & Django, JavaScript & React web and e-commerce applications. Services include custom software development, analysis and solutions to critical issues for companies worldwide.",
+            "author": {
+              "@type": "Organization",
+              "legalName": "Mirumee Software sp. z.o.o.",
+              "name": "Mirumee Software",
+              "contactPoint": [{
+                "@type": "ContactPoint",
+                "email": "hello@mirumee.com",
+                "contactType": "customer service",
+                "url": "https://mirumee.com"
+              }],
+              "logo": "https://qimete.com/static/img/logo.svg",
+              "sameAs": [
+                "http://twitter.com/mirumeelabs",
+                "https://github.com/mirumee",
+                "https://www.facebook.com/mirumeelabs/",
+                "https://www.behance.net/Mirumee",
+                "https://dribbble.com/mirumee",
+                "https://www.linkedin.com/company/mirumee-software",
+                "https://clutch.co/profile/mirumee"
+              ]
+            }
+          }
 
-  <meta property="og:image" content="https://qimete.com/static/img/og-how-we-work.jpg" />
+            , {
+            "@context": "http://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement":
+            [
+            ]
+          }
+        ]
 
+    </script>
+    <script type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHGURHKG8ve91SoOfyw2aohsXsCGrGbQs">
+    </script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-10159761-7']);
+        _gaq.push(['_trackPageview']);
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <script type="text/javascript">
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () {
+                    (h.hj.q = h.hj.q || []).push(arguments)
+                };
+            h._hjSettings = {hjid: 480056, hjsv: 5};
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script');
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, '//static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+    <script type="text/javascript" src="/js/app.8b0581e2f0c3e46c5606.js?8b0581e2f0c3e46c5606"></script>
+    <script type="text/javascript" src="/js/map.8b0581e2f0c3e46c5606.js?8b0581e2f0c3e46c5606"></script>
+{% endblock %}
 
-  <meta property="og:url" content="https://mirumee.com/how-we-work/" />
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@mirumeelabs" />
-
-  <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-<link rel="manifest" href="/favicon/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
-
-  
-  <script type="application/ld+json">
-[
-  {
-    "@context": "http://schema.org",
-    "@type": "WebSite",
-    "url": "https://mirumee.com",
-    "name": "Mirumee Software",
-    "description": "Mirumee is a software house specializing in high performance Python & Django, JavaScript & React web and e-commerce applications. Services include custom software development, analysis and solutions to critical issues for companies worldwide.",
-    "author": {
-      "@type": "Organization",
-      "legalName": "Mirumee Software sp. z.o.o.",
-      "name": "Mirumee Software",
-      "contactPoint": [{
-        "@type": "ContactPoint",
-        "email": "hello@mirumee.com",
-        "contactType": "customer service",
-        "url": "https://mirumee.com"
-      }],
-      "logo": "https://qimete.com/static/img/logo.svg",
-      "sameAs": [
-        "http://twitter.com/mirumeelabs",
-        "https://github.com/mirumee",
-        "https://www.facebook.com/mirumeelabs/",
-        "https://www.behance.net/Mirumee",
-        "https://dribbble.com/mirumee",
-        "https://www.linkedin.com/company/mirumee-software",
-        "https://clutch.co/profile/mirumee"
-      ]
-    }
-  }
-  
-    , {
-    "@context": "http://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement":
-    [
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    ]
-  }
-  
-]
-</script>
-
-<link href="/static/css/app.8b0581e2f0c3e46c5606.css?8b0581e2f0c3e46c5606" rel="stylesheet"></head>
-<body>
-  
-    <nav id="nav-bar" class="navbar navbar-custom jobs-nav" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed"
-          data-toggle="collapse"
-          data-target="#top-menu-collapse">
-            <div id="nav-icon">
-              <span></span>
-              <span></span>
-              <span></span>
+{% block content %}
+    <div id="how-we-work">
+        <div class="section section-header">
+            <div class="container">
+                <h2>我们如何创建 <br> 世界级软件</h2>
+                <div class="separator"></div>
+                <h3>强大的沟通. 现代的工作. 创造性心态.<br> 清晰透明. 这是我们的准则.
+                </h3>
             </div>
-          </button>
-          <a class="navbar-brand" href="/">
-            <img class="navbar-logo" alt="Mirumee Software" src="/static/img/logo-white.svg">
-          </a>
+            <img class="img cloud1" src="/static/img/how-we-work/cloud_05.png"/>
+            <img class="img cloud2" src="/static/img/how-we-work/cloud_04.png"/>
+            <img class="img cloud3" src="/static/img/how-we-work/cloud_02.png"/>
+            <img class="img cloud4" src="/static/img/how-we-work/cloud_01.png"/>
+            <img class="img cloud5" src="/static/img/how-we-work/cloud_08.png"/>
         </div>
-        <div class="collapse navbar-collapse" id="top-menu-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            
-              <li><a href="/services">Services</a></li>
-              
-              <li><a href="/how-we-work/">How We Work</a></li>
-              
-              <li><a href="/#showcase">Showcase</a></li>
-              
-              <li><a href="/#opensource">Opensource</a></li>
-              
-              <li><a href="/#team">Team</a></li>
-              
-              <li><a href="https://blog.mirumee.com/">Blog</a></li>
-              
-              <li><a href="/jobs">Careers</a><span class="job-counter">7</span></li>
-              
-              <li><a class="hire-btn" href="/hire-us">hire us</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  
-
-
-<div id="how-we-work">
-  <div class="section section-header">
-    <div class="container">
-      <h2>How do we create <br> world-class software</h2>
-      <div class="separator"></div>
-      <h3>Strong communication. Modern tools. Creative attitude.<br> Transparency. This is what we care about.</h3>
-    </div>
-    <img class="img cloud1" src="/static/img/how-we-work/cloud_05.png" />
-    <img class="img cloud2" src="/static/img/how-we-work/cloud_04.png" />
-    <img class="img cloud3" src="/static/img/how-we-work/cloud_02.png" />
-    <img class="img cloud4" src="/static/img/how-we-work/cloud_01.png" />
-    <img class="img cloud5" src="/static/img/how-we-work/cloud_08.png" />
-  </div>
-  <div class="section section-content">
-    <h2>We keep <br> you in the loop</h2>
-    <div class="container">
-      <div class="img gfx01">
-        <img class="" src="/static/img/how-we-work/gfx_01.png" />
-        <img class="img clock1" src="/static/img/how-we-work/clock_01.png" />
-        <img class="img clock2" src="/static/img/how-we-work/clock_02.png" />
-        <img class="img clock3" src="/static/img/how-we-work/clock_03.png" />
-        <img class="img clock4" src="/static/img/how-we-work/clock_04.png" />
-        <img class="img idea1" src="/static/img/how-we-work/idea_02.png" />
-        <img class="img idea2" src="/static/img/how-we-work/idea_01.png" />
-        <img class="img idea3" src="/static/img/how-we-work/idea_03.png" />
-        <img class="img plane1" src="/static/img/how-we-work/airplane_01.png" />
-      </div>
-      <div class="img gfx02">
-        <img class="img slack" src="/static/img/how-we-work/gfx_02.jpg" />
-        <img class="img slack1" src="/static/img/how-we-work/slack_02.jpg" />
-        <img class="img slack2" src="/static/img/how-we-work/slack_03.jpg" />
-        <img class="img slack3" src="/static/img/how-we-work/slack_04.jpg" />
-        <img class="img slack_heart" src="/static/img/how-we-work/slack_heart.jpg" />
-        <img class="img slack_metal" src="/static/img/how-we-work/slack_metal.jpg" />
-        <img class="img slack_ok" src="/static/img/how-we-work/slack_ok.jpg" />
-        <span class="heart_numbers one">1</span>
-        <span class="heart_numbers two">2</span>
-        <span class="heart_numbers three">3</span>
-        <span class="heart_numbers four">4</span>
-        <span class="heart_numbers five">5</span>
-        <span class="heart_numbers six">6</span>
-        <span class="heart_numbers seven">7</span>
-        <span class="heart_numbers eight">8</span>
-        <span class="metal_numbers one">1</span>
-        <span class="metal_numbers two">2</span>
-        <span class="metal_numbers three">3</span>
-        <span class="metal_numbers four">4</span>
-      </div>
-      <div class="img gfx02a">
-        <img class="" src="/static/img/how-we-work/gfx_02a.png" />
-      </div>
-      <div class="img gfx03">
-        <img class="" src="/static/img/how-we-work/gfx_03.png" />
-        <img class="img plane2" src="/static/img/how-we-work/airplane_02.png" />
-      </div>
-      <div class="img gfx04">
-        <img class="" src="/static/img/how-we-work/gfx_04.gif" />
-        <img class="img plane3" src="/static/img/how-we-work/airplane_03.png" />
-        <img class="img idea5" src="/static/img/how-we-work/idea_05.png" />
-      </div>
-      <div class="img gfx05">
-          <img class="" src="/static/img/how-we-work/gfx_05.png" />
-          <img class="img loop" src="/static/img/how-we-work/loop_line.png" />
-        </div>
-      <div class="img gfx06">
-        <img class="" src="/static/img/how-we-work/gfx_06.png" />
-      </div>
-      <div class="img gfx07">
-        <img class="" src="/static/img/how-we-work/gfx_07.png" />
-      </div>
-      <div class="img gfx08">
-        <img class="" src="/static/img/how-we-work/gfx_08.gif" />
-        <img class="img idea4" src="/static/img/how-we-work/idea_04.png" />
-      </div>
-      <img class="img idea" src="/static/img/how-we-work/idea_02.png" />
-      <img class="img plane4" src="/static/img/how-we-work/airplane_04.png" />
-      <img class="img plane5" src="/static/img/how-we-work/airplane_05.png" />
-      <img class="img cloud6" src="/static/img/how-we-work/cloud_02.png" />
-      <img class="img cloud7" src="/static/img/how-we-work/cloud_02.png" />
-      <img class="img cloud8" src="/static/img/how-we-work/cloud_01.png" />
-      <img class="img cloud9" src="/static/img/how-we-work/cloud_04.png" />
-      <img class="img cloud10" src="/static/img/how-we-work/cloud_02.png" />
-      <img class="img cloud11" src="/static/img/how-we-work/cloud_05.png" />
-      <img class="img cloud12" src="/static/img/how-we-work/cloud_03.png" />
-      <img class="img cloud13" src="/static/img/how-we-work/cloud_06.png" />
-      <img class="img cloud14" src="/static/img/how-we-work/cloud_08.png" />
-      <img class="img cloud15" src="/static/img/how-we-work/cloud_07.png" />
-      <img class="img cloud16" src="/static/img/how-we-work/cloud_05.png" />
-      <div class="text text01">
-        <h3>TEAM EXTENSION</h3>
-        <p><strong>We start with workshops</strong> where our teams get to meet in person and <strong>discuss requirements</strong> for the project. Once we agree on the <strong>scope of work</strong>, we assemble a unit of engineers and designers to act as <strong>your team’s extension.</strong></p>
-      </div>
-      <div class="title title01">
-        <div class="separator"></div>
-        <h2>We deliver <br>more than code</h2>
-      </div>
-      <div class="title title02">
-        <div class="separator"></div>
-        <h2>We build <br> exceptional software</h2>
-      </div>
-      <div class="text text02">
-        <h3>SINGLE POINT OF CONTACT</h3>
-        <p>Our team work with your company <strong>directly taking </strong> part in <strong>Slack discussions, scrums and conference calls</strong> while a <strong>senior leader</strong> remains responsible for coordination. Tools like <strong>GitHub, Jira and Confluence</strong> help everyone stay on the same page when making and documenting <strong>technical decisions</strong>.</p>
-      </div>
-      <div class="text text03">
-        <h3>AGILE &amp; PRODUCT DRIVEN</h3>
-        <p>We aim to solve your problems. Putting our <strong>engineers on the front line</strong> allows them to understand the challenges you face. The resulting solutions can therefore combine your domain knowledge with our expertise.</p>  
-        <h3 class="last">THINKING AHEAD</h3>
-        <p>The initial brief establishes a direction but we’re  revisiting decisions when we believe a better solution exists. <strong>Short development cycles</strong> keep the inertia low allowing the project to <strong>quickly adapt to changing requirements</strong>.</p>
-      </div>
-      <div class="text text04">
-        <h3>MAINTAINABLE &amp; QUALITY CODE</h3>
-        <p>You’ll work with engineers who specialize in <strong>delivering complex systems that remain maintainable and scalable</strong>. We maintain high coding standards, automate processes to <strong>reduce maintenance costs</strong> and make sure <strong>the code is self-documenting</strong>. </p>
-        <p class="quote">Strict code reviews, automated tests, and continuous delivery help us detect problems before they arise.</p>
-        <p>At the same time our <strong>focus on usability</strong> allows us to build software that is both <strong>intuitive and easy to use</strong>.</p>
-      </div>
-    </div>
-  </div>
-  <div class="section section-clutch">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-sm-8 col-sm-offset-2">
-          <div class="content">
-            <div class="quote-mark">"</div>
-            <p>Mirumee integrated well with multiple teams, delivered results quickly and reliably, and adapted easily to changes. The team was engaged and offered valuable recommendations on deployment flow changes and  version management. <strong>The only reason  I wouldn’t recommend them, is because I want to work with them.</strong></p>
-            <div class="author">
-              <img src="/static/img/chris-photo.png" />
-              <h4><strong>Christoph Kepper</strong>, CTO, <span>Lulu Press</span></h4>
+        <div class="section section-content">
+            <h2>我们让<br> 你保持在这个迭代中</h2>
+            <div class="container">
+                <div class="img gfx01">
+                    <img class="" src="/static/img/how-we-work/gfx_01.png"/>
+                    <img class="img clock1" src="/static/img/how-we-work/clock_01.png"/>
+                    <img class="img clock2" src="/static/img/how-we-work/clock_02.png"/>
+                    <img class="img clock3" src="/static/img/how-we-work/clock_03.png"/>
+                    <img class="img clock4" src="/static/img/how-we-work/clock_04.png"/>
+                    <img class="img idea1" src="/static/img/how-we-work/idea_02.png"/>
+                    <img class="img idea2" src="/static/img/how-we-work/idea_01.png"/>
+                    <img class="img idea3" src="/static/img/how-we-work/idea_03.png"/>
+                    <img class="img plane1" src="/static/img/how-we-work/airplane_01.png"/>
+                </div>
+                <div class="img gfx02">
+                    <img class="img slack" src="/static/img/how-we-work/gfx_02.jpg"/>
+                    <img class="img slack1" src="/static/img/how-we-work/slack_02.jpg"/>
+                    <img class="img slack2" src="/static/img/how-we-work/slack_03.jpg"/>
+                    <img class="img slack3" src="/static/img/how-we-work/slack_04.jpg"/>
+                    <img class="img slack_heart" src="/static/img/how-we-work/slack_heart.jpg"/>
+                    <img class="img slack_metal" src="/static/img/how-we-work/slack_metal.jpg"/>
+                    <img class="img slack_ok" src="/static/img/how-we-work/slack_ok.jpg"/>
+                    <span class="heart_numbers one">1</span>
+                    <span class="heart_numbers two">2</span>
+                    <span class="heart_numbers three">3</span>
+                    <span class="heart_numbers four">4</span>
+                    <span class="heart_numbers five">5</span>
+                    <span class="heart_numbers six">6</span>
+                    <span class="heart_numbers seven">7</span>
+                    <span class="heart_numbers eight">8</span>
+                    <span class="metal_numbers one">1</span>
+                    <span class="metal_numbers two">2</span>
+                    <span class="metal_numbers three">3</span>
+                    <span class="metal_numbers four">4</span>
+                </div>
+                <div class="img gfx02a">
+                    <img class="" src="/static/img/how-we-work/gfx_02a.png"/>
+                </div>
+                <div class="img gfx03">
+                    <img class="" src="/static/img/how-we-work/gfx_03.png"/>
+                    <img class="img plane2" src="/static/img/how-we-work/airplane_02.png"/>
+                </div>
+                <div class="img gfx04">
+                    <img class="" src="/static/img/how-we-work/gfx_04.gif"/>
+                    <img class="img plane3" src="/static/img/how-we-work/airplane_03.png"/>
+                    <img class="img idea5" src="/static/img/how-we-work/idea_05.png"/>
+                </div>
+                <div class="img gfx05">
+                    <img class="" src="/static/img/how-we-work/gfx_05.png"/>
+                    <img class="img loop" src="/static/img/how-we-work/loop_line.png"/>
+                </div>
+                <div class="img gfx06">
+                    <img class="" src="/static/img/how-we-work/gfx_06.png"/>
+                </div>
+                <div class="img gfx07">
+                    <img class="" src="/static/img/how-we-work/gfx_07.png"/>
+                </div>
+                <div class="img gfx08">
+                    <img class="" src="/static/img/how-we-work/gfx_08.gif"/>
+                    <img class="img idea4" src="/static/img/how-we-work/idea_04.png"/>
+                </div>
+                <img class="img idea" src="/static/img/how-we-work/idea_02.png"/>
+                <img class="img plane4" src="/static/img/how-we-work/airplane_04.png"/>
+                <img class="img plane5" src="/static/img/how-we-work/airplane_05.png"/>
+                <img class="img cloud6" src="/static/img/how-we-work/cloud_02.png"/>
+                <img class="img cloud7" src="/static/img/how-we-work/cloud_02.png"/>
+                <img class="img cloud8" src="/static/img/how-we-work/cloud_01.png"/>
+                <img class="img cloud9" src="/static/img/how-we-work/cloud_04.png"/>
+                <img class="img cloud10" src="/static/img/how-we-work/cloud_02.png"/>
+                <img class="img cloud11" src="/static/img/how-we-work/cloud_05.png"/>
+                <img class="img cloud12" src="/static/img/how-we-work/cloud_03.png"/>
+                <img class="img cloud13" src="/static/img/how-we-work/cloud_06.png"/>
+                <img class="img cloud14" src="/static/img/how-we-work/cloud_08.png"/>
+                <img class="img cloud15" src="/static/img/how-we-work/cloud_07.png"/>
+                <img class="img cloud16" src="/static/img/how-we-work/cloud_05.png"/>
+                <div class="text text01">
+                    <h3>需求沟通</h3>
+                    <p>我们从<strong>需求讨论</strong>开始,让大家相互见面了解项目并一起<strong>讨论需求</strong>.
+                        一旦我们就 <strong>项目需求</strong>达成了共识, 我们就会开始组建一个工程师和设计师的小团队 <strong>
+                            专门负责您的项目.</strong></p>
+                </div>
+                <div class="title title01">
+                    <div class="separator"></div>
+                    <h2>我们提供的 <br>不单单是代码</h2>
+                </div>
+                <div class="title title02">
+                    <div class="separator"></div>
+                    <h2>我们开发 <br> 出色的软件</h2>
+                </div>
+                <div class="text text02">
+                    <h3>专人开发</h3>
+                    <p>一旦我们开始进行开发后，我们会定时和贵公司进行进度沟通，我们采用敏捷开发和电话会议进行定时的沟通，当然你也可以每周过来
+                        和我们一起看下项目进度，如果你有时间。. 我们使用 <strong>GitHub, Jira and 禅道</strong> 等工具帮我们可以双方
+                        都可以及时的跟踪和监控项目的<strong>进度</strong>.</p>
+                </div>
+                <div class="text text03">
+                    <h3>敏捷 &amp; 客户驱动</h3>
+                    <p>我们的目标是解决您的问题.我们的工程师奋斗在第一线，让他们了解您的具体需求，这样产生的解决方案可以更好的解决您的问题</p>
+                    <h3 class="last">往前想一步</h3>
+                    <p>最初的概述确立了一个方向，但是当我们认为存在更好的解决方案时，我们会往前多想一些，争取做得更加完善一些。使项目能够
+                        快速适应不断变化的需求。.</p>
+                </div>
+                <div class="text text04">
+                    <h3>可维护的 &amp; 有质量的代码</h3>
+                    <p>你将和一些专门提供 <strong>可维护并可扩展系统</strong>的工程师一起工作. 我们对自己代码注释要求很高, 采用一些自动化流程
+                        降低您后续的持续开发和维护的成本. </p>
+                    <p class="quote">严格的代码审查，自动化测试及可持续交互能够帮助我们在问题出现之前发现它.</p>
+                    <p>同时，基于过往我们对<strong>QQ阅读、QQ影音</strong>等上亿用户级别产品的设计开发经验，让我们能够开发出
+                        <strong>直接并使用简单的软件</strong>.</p>
+                </div>
             </div>
-            <a class="more btn" href="https://clutch.co/profile/mirumee" target="_blank">Read all reviews</a>
-          </div>
         </div>
-      </div>
+        <div class="section section-clutch">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="content">
+                            <div class="quote-mark">"</div>
+                            <p>Qimete与多个团队很好地结合在一起，快速可靠地交付结果，并且易于适应变化。团队参与并提供了关于部署流程变更和
+                                版本管理的宝贵建议。我不会推荐他们的唯一原因是因为我想与他们合作</p>
+                            <div class="author">
+                                <img src="/static/img/chris-photo.png"/>
+                                <h4><strong>Christoph Kepper</strong>, CTO, <span>Lulu Press</span></h4>
+                            </div>
+                            <a class="more btn" href="https://clutch.co/profile/mirumee" target="_blank">查看所有</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section section-enginers">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4 columns">
+                        <div class="separator"></div>
+                        <h3>我们工程师 <br> 一直 <br> 在第一线</h3>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 columns">
+                        <div class="separator red"></div>
+                        <h3>代码质量 <br> 和透明度 <br> 是我们的绝对 <br> 优先事项</h3>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 columns">
+                        <div class="separator"></div>
+                        <h3>我们专注在 <br> 开发一个伟大的产品 <br> 而不仅仅是写代码</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section section-tools">
+            <div class="container">
+                <h2>我们使用的开发工具</h2>
+                <ul>
+                    <li><img src="/static/img/how-we-work/tools_github.svg"/></li>
+                    <li><img src="/static/img/how-we-work/tools_slack.svg"/></li>
+                    <li><img src="/static/img/how-we-work/tools_figma.svg"/></li>
+                    <li><img src="/static/img/how-we-work/tools_gsuite.svg"/></li>
+                    <li><img src="/static/img/how-we-work/tools_jira.svg"/></li>
+                    <li><img src="/static/img/how-we-work/tools_confluence.svg"/></li>
+                </ul>
+            </div>
+            <img class="img cloud17" src="/static/img/how-we-work/cloud_02.png"/>
+            <img class="img cloud18" src="/static/img/how-we-work/cloud_02.png"/>
+        </div>
+        <div class="section section-casestudies">
+            <div class="container">
+                <div class="separator"></div>
+                <h2>实例展示</h2>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 columns">
+                        <div class="logo"><img src="/static/img/clients-prettygreen.svg"/></div>
+                        <div class="separator"></div>
+                        <h3 class="title"><a href="https://www.prettygreen.com/">如何拓展直销网络</a>
+                        </h3>
+                        <div class="image"><img src="/static/img/how-we-work/showcase1.png"/></div>
+                        <div class="details">
+                            <div class="row">
+                                <div class="col-xs-4 col-sm-4 col-sm-push-8">
+                                    <p>
+                                        <strong>99,98%</strong>
+                                        <span class="spacer small"></span>
+                                    </p>
+                                    <p>UPtime</p>
+                                </div>
+                                <div class="col-xs-4 col-sm-4">
+                                    <p>
+                                        <strong><1 sec.</strong>
+                                        <span class="spacer small"></span>
+                                    </p>
+                                    <p>response<br> time</p>
+                                </div>
+                                <div class="col-xs-4 col-sm-4 col-sm-pull-8">
+                                    <p>
+                                        <strong>+30%</strong>
+                                        <span class="spacer small"></span>
+                                    </p>
+                                    <p>conversion<br> rate</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="btn-left">
+                            <a class="item-btn btn" target="_blank" href="https://www.prettygreen.com/">去看看</a>
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 columns">
+                        <div class="logo"><img src="/static/img/clients-magrudys.svg"/></div>
+                        <div class="separator"></div>
+                        <h3 class="title"><a href="/projects_magrudy/">从传统业务到电子商务</a></h3>
+                        <div class="image"><img src="/static/img/how-we-work/showcase2.png"/></div>
+                        <div class="details">
+                            <div class="row">
+                                <div class="col-xs-4 col-sm-4">
+                                    <p>
+                                        <strong>900万</strong>
+                                        <span class="spacer small"></span>
+                                    </p>
+                                    <p>商品</p>
+                                </div>
+                                <div class="col-xs-4 col-sm-4">
+                                    <p>
+                                        <strong>12种</strong>
+                                        <span class="spacer small"></span>
+                                    </p>
+                                    <p>支付方式</p>
+                                </div>
+                                <div class="col-xs-4 col-sm-4">
+                                    <p>
+                                        <strong>4.500/每分钟</strong>
+                                        <span class="spacer small"></span>
+                                    </p>
+                                    <p>提交</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="btn-left">
+                            <a class="item-btn btn" href="/projects/magrudy/">查看更多</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="section section-enginers">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-4 columns">
-          <div class="separator"></div>
-          <h3>Our Engineers <br> are always <br> in the frontline</h3>
-        </div>
-        <div class="col-xs-12 col-sm-4 columns">
-          <div class="separator red"></div>
-          <h3>Quality of the code <br> and transparency <br> are our absolute <br> priority</h3>
-        </div>
-        <div class="col-xs-12 col-sm-4 columns">
-          <div class="separator"></div>
-          <h3>We're focused on <br> building great products <br> not just writing code</h3>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="section section-tools">
-    <div class="container">
-      <h2>tools we use</h2>
-      <ul>
-        <li><img src="/static/img/how-we-work/tools_github.svg" /></li>
-        <li><img src="/static/img/how-we-work/tools_slack.svg" /></li>
-        <li><img src="/static/img/how-we-work/tools_figma.svg" /></li>
-        <li><img src="/static/img/how-we-work/tools_gsuite.svg" /></li>
-        <li><img src="/static/img/how-we-work/tools_jira.svg" /></li>
-        <li><img src="/static/img/how-we-work/tools_confluence.svg" /></li>
-      </ul>
-    </div>
-    <img class="img cloud17" src="/static/img/how-we-work/cloud_02.png" />
-    <img class="img cloud18" src="/static/img/how-we-work/cloud_02.png" />
-  </div>
-  <div class="section section-casestudies">
-    <div class="container">
-      <div class="separator"></div>
-      <h2>Case studies</h2>
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-6 columns">
-          <div class="logo"><img src="/static/img/clients-prettygreen.svg" /></div>
-          <div class="separator"></div>
-          <h3 class="title"><a href="https://www.prettygreen.com/">how to scale global<br> e-commerce business</a></h3>
-          <div class="image"><img src="/static/img/how-we-work/showcase1.png" /></div>
-          <div class="details">
+
+    <div class="section section-contact" id="contact">
+        <div class="container">
             <div class="row">
-              <div class="col-xs-4 col-sm-4 col-sm-push-8">
-                <p>
-                  <strong>99,98%</strong>
-                  <span class="spacer small"></span>
-                </p>
-                <p>UPtime</p>
-              </div>
-              <div class="col-xs-4 col-sm-4">
-                <p>
-                  <strong><1 sec.</strong>
-                  <span class="spacer small"></span>
-                </p>
-                <p>response<br> time</p>
-              </div>
-              <div class="col-xs-4 col-sm-4 col-sm-pull-8">
-                <p>
-                  <strong>+30%</strong>
-                  <span class="spacer small"></span>
-                </p>
-                <p>conversion<br> rate</p>         
-              </div>
-            </div>
-          </div>
-          <p class="btn-left">
-            <a class="item-btn btn" target="_blank" href="https://www.prettygreen.com/">Visit the website</a>
-          </p>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 columns">
-          <div class="logo"><img src="/static/img/clients-magrudys.svg" /></div>
-          <div class="separator"></div>
-          <h3 class="title"><a href="/projects_magrudy/">From traditional business to <br> successful e-commerce</a></h3>
-          <div class="image"><img src="/static/img/how-we-work/showcase2.png" /></div>
-          <div class="details">
-            <div class="row">
-              <div class="col-xs-4 col-sm-4">
-                <p>
-                  <strong>9 mln</strong>
-                  <span class="spacer small"></span>
-                </p>
-                <p>products</p>
-              </div>
-              <div class="col-xs-4 col-sm-4">
-                  <p>
-                    <strong>12</strong>
-                    <span class="spacer small"></span>
-                  </p>
-                  <p>currencies</p>
-              </div>
-              <div class="col-xs-4 col-sm-4">
-                  <p>
-                    <strong>4.500+</strong>
-                    <span class="spacer small"></span>
-                  </p>
-                  <p>commits</p>
-              </div>
-            </div>
-          </div>
-          <p class="btn-left">
-            <a class="item-btn btn" href="/projects/magrudy/">Read our case study</a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-  
-    <div class="section section-contact" id="contact" >
-      <div class="container">
-        <div class="row">
-          <h2>Work with us</h2>
-          <h3 class="contact-email">Our team can be your team</p>
-          <p><img class="contact-icon" src="/static/img/contact-icon.png" srcset="/static/img/contact-icon.png 1x, /static/img/contact-icon@2x.png 2x" alt=""/></h3>
-          <p class="contact-invitation"><strong>Looking for a quote for your next project?</strong></p>
-          <p class="contact-invitation">Take a minute and fill out our project initiation&nbsp;form.</p>
-          <p><a class="contact-btn btn" href="/hire-us">We can't wait to hear from you!</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="section section-hq">
-        <div class="address-bottom">
-            <div class="col-sm-12">
-                <h2>HQ</h2>
-                <p><span>Mirumee, Tęczowa 7<br>53-601 Wrocław, <br>Poland</span></p>
+                <h2>跟我们工作</h2>
+                <h3 class="contact-email">我们的团队可以成为你的团队</p>
+                    <p><img class="contact-icon" src="{% static 'img/contact-icon.png' %}"
+                            srcset="/static/img/contact-icon.png 1x, /static/img/contact-icon@2x.png 2x" alt=""/></h3>
+                <p class="contact-invitation"><strong>为你的项目寻找报价?</strong></p>
+                <p class="contact-invitation">可以花点时间t填写我们一个项目启动表，我们给您报价.</p>
+                <p><a class="contact-btn btn" href="/hire-us">点击这里询价!</a></p>
             </div>
         </div>
-        <div id="hq-map"></div>
     </div>
-  
+
+{% endblock %}
 
 
-<footer class="section section-footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12 columns">
-        <h2>Last but not&nbsp;least</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-4">
-        <h4>Contact</h4>
-        <p><a href="/hire-us">Business inquiry</a></p>
-        <p><a href="mailto:hello+partner@mirumee.com">Become a partner</a></p>
-        <p><a href="mailto:hello@mirumee.com?subject=Just want to say hello!">Just want to say hello!</a></p>
-        <p class="footer-address">
-          Mirumee Software sp. z o.o. sp.k.<br/>
-          ul. Tęczowa 7<br/>
-          53-601 Wrocław, Poland<br/>
-          VAT EU: PL8971845922<br/>
-          KRS: 0000697262
-        </p> 
-      </div>
-      <div class="col-sm-4">
-        <h4>Social</h4>
-        <ul>
-          <li><a href="http://twitter.com/mirumeelabs" target="_blank" rel="noopener"><img class="img-responsive" title="Twitter" alt="Twitter" src="/static/img/social-twitter.png" srcset="/static/img/social-twitter.png 1x, /static/img/social-twitter@2x.png 2x"></a></li>
-          <li><a href="https://github.com/mirumee" target="_blank" rel="noopener"><img class="img-responsive" title="GitHub" alt="GitHub" src="/static/img/social-github.png" srcset="/static/img/social-github.png 1x, /static/img/social-github@2x.png 2x"></a></li>
-          <li><a href="https://www.facebook.com/mirumeelabs/" target="_blank" rel="noopener"><img class="img-responsive" title="Facebook" alt="Facebook" src="/static/img/social-fb.png" srcset="/static/img/social-fb.png 1x, /static/img/social-fb@2x.png 2x"></a></li>
-          <li><a href="https://www.behance.net/Mirumee" target="_blank" rel="noopener"><img class="img-responsive" title="Behance" alt="Behance" src="/static/img/social-behance.png" srcset="/static/img/social-behance.png 1x, /static/img/social-behance@2x.png 2x" rel="noopener"></a></li>
-          <li><a href="https://dribbble.com/mirumee" target="_blank" rel="noopener"><img class="img-responsive" title="Dribble" alt="Dribble" src="/static/img/social-dribble.png" srcset="/static/img/social-dribble.png 1x, /static/img/social-dribble@2x.png 2x"></a></li>
-        </ul>
-      </div>
-      <div class="col-sm-4">
-        <h4>Openings</h4>
-        <p><a href="/ux-ui-designer">Senior UX/UI Designer</a></p>
-        <p><a href="jobs/senior-designer">Senior Designer</a></p>
-        <p><a href="/python-django-developer">Python/Django Developer</a></p>
-        <p><a href="/business-development-manager">Business Development Manager</a></p>
-        <p><a href="/devops-cloud-engineer">DevOps Cloud Engineer</a></p>
-        <p><a href="/senior-front-end-developer">Senior Frontend Developer</a></p>
-        <p><a href="/content-marketing-specialist">Marketing Content Specialist</a></p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12">
-        <p class="copyright">Copyright &copy; 2009&ndash;2018 Mirumee&nbsp;Software</p>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHGURHKG8ve91SoOfyw2aohsXsCGrGbQs"></script>
 
 
-<script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-10159761-7']);
-    _gaq.push(['_trackPageview']);
-    (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-</script>
-<script type="text/javascript">
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:480056,hjsv:5};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
-<script type="text/javascript" src="/js/app.8b0581e2f0c3e46c5606.js?8b0581e2f0c3e46c5606"></script><script type="text/javascript" src="/js/map.8b0581e2f0c3e46c5606.js?8b0581e2f0c3e46c5606"></script></body>
-</html>
+
 

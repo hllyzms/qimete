@@ -1,0 +1,164 @@
+<!doctype html>
+{% load staticfiles %}
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>兼职详情</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache"> 
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<link rel="stylesheet" href="{% static 'css/zhaomu/reset.css' %}">
+	<style>
+		body{
+			font-size: 0.18rem;
+			background-color: #f2f4f8;
+		}
+
+		.outer{
+			line-height: 2.5em
+		}
+
+		.top{
+			background-color: #f86c36;
+			display: flex;
+			justify-content: space-between;
+			color: #fff;
+			vertical-align: middle;
+			font-size: 0.16rem;
+			padding: 0 0.1rem;
+		}
+
+		.top img{
+			height: 1em;
+			vertical-align: middle;
+		}
+
+		.top span:nth-child(2){
+			font-size: 0.2rem;
+		}
+
+		.inner{
+			background-color: #fff;
+			padding: 0 0.1rem;
+			margin-bottom: 0.1rem;
+		}
+
+		.con1{
+			padding-bottom: 0.1rem;
+			border-bottom: 1px solid #eee;
+		}
+
+		.con1 p:nth-child(2){
+			display: flex;
+			justify-content: space-between;
+			font-size: 0.16rem;
+		}
+
+		.con1 span span{
+			color: #aaa;
+		}
+
+		.con1 p span:nth-child(2){
+			color: #f86c36;
+		}
+
+		.con2{
+			padding-top: 0.1rem;
+			padding-bottom: 0.1rem;
+			border-bottom: 1px solid #eee;
+			font-size: 0.16rem;
+			line-height: 2em;
+		}
+
+		.con2 span{
+			color: #aaa;
+		}
+
+		.con3{
+			color: #fbd5ac;
+			line-height: 1.2em;
+			font-weight: 0.16rem;
+			padding: 0.1rem 0;
+			font-size: 0.16rem;
+		}
+
+		.jieshao{
+			padding: 0.2rem 0.1rem;
+			background-color: #fff;
+			margin-bottom: 2em;
+			font-size: 0.16rem;
+		}
+
+		.footer{
+			position: fixed;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: #f86c36;
+			color: #fff;
+			display: flex;
+			justify-content: space-between;
+			padding: 0 0.2rem;
+		}
+	</style>
+</head>
+<body>
+	<div class="outer">
+		<div class="top">
+			<span>
+				<img src="{% static 'img/zhaomu/left.png' %}" alt="">
+				返回
+			</span>
+			<span>兼职信息</span>
+			<span>举报</span>
+		</div>
+		<div class="inner">
+			<div class="con1">
+				<p>手机在线兼职，操作简单日结操作方便</p>
+				<p>
+					<span><span>地区：</span>全国</span>
+					<span>30.00元/小时</span>
+				</p>
+			</div>
+			<div class="con2">
+				<p>
+					<span>兼职类型：</span>
+					手机代理
+				</p>
+				<p>
+					<span>招聘人数：</span>
+					999人
+				</p>
+				<p>
+					<span>有效日期：</span>
+					2018年 6月 20日 之前
+				</p>
+			</div>
+			<div class="con3">
+				<p>防骗提示，商家职位不会收取任何费用，如商家要求缴纳费用或者押金，请提高警惕并第一时间向我们举报！</p>
+			</div>
+		</div>
+		<p class="jieshao">Lorem ipsum dolor sit amet,</p>
+		<div class="footer">
+			<span>联系</span>
+			<span>报名</span>
+			<span>分享</span>
+		</div>
+	</div>
+</body>
+<script>
+	function rem(){
+	  var html=document.getElementsByTagName('html')[0];
+	  var Ww=document.documentElement.clientWidth;
+	  var scale=Ww/360;
+	  html.style.fontSize=scale*100+"px";
+	}
+	rem();
+	window.onresize=function(){
+	  rem();
+	}
+</script>
+</html>

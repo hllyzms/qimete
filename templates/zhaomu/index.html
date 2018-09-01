@@ -1,0 +1,178 @@
+<!doctype html>
+{% load staticfiles %}
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>我要赚钱</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache"> 
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<link rel="stylesheet" href="{% static 'css/zhaomu/reset.css' %}">
+	<style>
+		body{
+			font-size: 0.125rem;
+		}
+		.title{
+			width: 100%;
+		}
+
+		.left{
+			overflow: hidden;
+		}
+
+		.left img{
+			float: left;
+		    width: 1rem;
+		    margin: 0.1rem;
+		}
+
+		.left div{
+/* 			width: 2rem;
+		    margin-top: 0.1rem; */
+		    float: left;
+		}
+
+		.left p{
+			color:#4f94f1;
+		}
+
+		.left p:nth-child(1){
+			font-size: 0.18rem;
+    		line-height: 3em;
+		}
+
+		.left:nth-child(2){
+			background-color: #f0f9fe;
+		}
+
+		.left:nth-child(4){
+			background-color: #f7f1fb;
+		}
+
+		.right{
+			overflow: hidden;
+		}
+
+		.right img{
+			float: right;
+		    width: 1rem;
+		    margin: 0.1rem;
+		    margin-left: 0rem;
+		}
+
+		.right div{
+			width: 2.25rem;
+		    /* margin-top: 0.1rem; */
+		    float: left;
+		    margin-left: 0.1rem;
+		}
+
+		.right p{
+			color:#4f94f1;
+		}
+
+		.right p:nth-child(1){
+			font-size: 0.18rem;
+    		line-height: 2em;
+		}
+
+		.right:nth-child(3){
+			background-color: #fdfbee;
+		}
+
+		.right:nth-child(5){
+			background-color: #e7f5de;
+		}
+
+		.sub{
+			background-color: #d93941;
+		    width: 60%;
+		    margin: 0.1rem auto;
+		    text-align: center;
+		    line-height: 0.5rem;
+		    color: #fff;
+		    border-radius: 11px;
+		    font-size: 0.18rem;
+		}
+
+		body>p{
+			color: #fff;
+			position: absolute;
+		}
+
+		body>p:nth-child(2){
+			top: 0.1rem;
+		    font-size: 0.2rem;
+		    left: 0.1rem;
+		}
+
+		body>p:nth-child(3){
+			left: 0.1rem;
+    		top: 0.5rem;
+		}
+
+		body>p:nth-child(4){
+		    left: 0.1rem;
+    		top: 0.75rem;
+		}
+	</style>
+</head>
+<body>
+	<img class="title" src="{% static 'img/zhaomu/49190948492548460.png' %}" alt="">
+	<p>不好意思，我又来给你送钱了</p>
+	<p>转发文章，轻松赚红包</p>
+	<p>13801268603</p>
+	<div class="left">
+		<img src="{% static 'img/zhaomu/404781040726644288.png' %}" alt="">
+		<div>
+			<p>需要干什么呢？</p>
+			<p>站长给你发微信文章，<br>你把文章转发到你所在的村庄群里。</p>
+		</div>
+	</div>
+	<div class="right">
+		<img src="{% static 'img/zhaomu/287656621013282826.png' %}" alt="">
+		<div>
+			<p>要什么样的人？</p>
+			<p>1.有本村微信群，愿意推文章到群,</p>
+			<p>2.群中有100人以上，</p>
+			<p>3.一村只招一个(可和店长联系确认)</p>
+		</div>
+	</div>
+	<div class="left">
+		<img src="{% static 'img/zhaomu/579964467840684593.png' %}" alt="">
+		<div>
+			<p>干了能赚多少钱？</p>
+			<p>根据转发的内容不同，<br>每次能赚的钱会不同,<br>最低1元/文章/每次！</p>
+		</div>
+	</div>
+	<div class="right">
+		<img src="{% static 'img/zhaomu/797429577704628873.png' %}" alt="">
+		<div style="margin-top: 0.2rem;">
+			<p>这是不是骗人的？</p>
+			<p>转发后，截图，发给工作站管理员，<span style="color:#f1637d;">立即给你</span>发红包结算!</p>
+		</div>
+	</div>
+	<div class="sub" onclick="sub()">
+		提交申请
+	</div>
+</body>
+<script>
+	function rem(){
+	  var html=document.getElementsByTagName('html')[0];
+	  var Ww=document.documentElement.clientWidth;
+	  var scale=Ww/360;
+	  html.style.fontSize=scale*100+"px";
+	}
+	rem();
+	window.onresize=function(){
+	  rem();
+	}
+
+	function sub() {
+		window.location.href="entryform.html";
+	}
+</script>
+</html>
