@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
   <component name="PublishConfigData" serverName="qimete_47.104.95.206">
     <serverData>
       <paths name="qimete_47.104.95.206">
         <serverdata>
           <mappings>
             <mapping deploy="/pei/qimete" local="$PROJECT_DIR$" web="/" />
+=======
+  <component name="PublishConfigData" serverName="qimete" createEmptyFolders="true">
+    <serverData>
+      <paths name="qimete">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/pei/qimete" local="$PROJECT_DIR$" web="/" />
+>>>>>>> e47dfe20f311a4af4c314e9579a773f275499f09
           </mappings>
         </serverdata>
       </paths>

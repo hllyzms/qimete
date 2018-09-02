@@ -5,14 +5,22 @@
       <configuration>
         <option name="rootFolder" value="$MODULE_DIR$" />
         <option name="settingsModule" value="qimete/settings.py" />
+<<<<<<< HEAD
         <option name="manageScript" value="$MODULE_DIR$/manage.py" />
+=======
+        <option name="manageScript" value="manage.py" />
+>>>>>>> e47dfe20f311a4af4c314e9579a773f275499f09
         <option name="environment" value="&lt;map/&gt;" />
       </configuration>
     </facet>
   </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
+<<<<<<< HEAD
     <orderEntry type="inheritedJdk" />
+=======
+    <orderEntry type="jdk" jdkName="Python 3.6.4 virtualenv at /usr/local/src/envs/qimete" jdkType="Python SDK" />
+>>>>>>> e47dfe20f311a4af4c314e9579a773f275499f09
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TemplatesService">
@@ -24,7 +32,11 @@
     </option>
   </component>
   <component name="TestRunnerService">
+<<<<<<< HEAD
     <option name="projectConfiguration" value="py.test" />
     <option name="PROJECT_TEST_RUNNER" value="py.test" />
+=======
+    <option name="PROJECT_TEST_RUNNER" value="Unittests" />
+>>>>>>> e47dfe20f311a4af4c314e9579a773f275499f09
   </component>
 </module>
