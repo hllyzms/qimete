@@ -2,13 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-<<<<<<< HEAD
       <webServer id="19af3f66-6c6c-408f-900d-4c0dd898fa6c" name="qimete_47.104.95.206" url="http://47.104.95.206">
         <fileTransfer host="47.104.95.206" port="22" rootFolder="/home" accessType="SFTP">
-=======
-      <webServer id="eecfddd6-fb3c-45e1-86e6-c668c30bfa38" name="qimete" url="http://47.104.95.206">
-        <fileTransfer host="47.104.95.206" port="22" accessType="SFTP">
->>>>>>> e47dfe20f311a4af4c314e9579a773f275499f09
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
